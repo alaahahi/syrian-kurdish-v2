@@ -1,88 +1,307 @@
 @extends('layouts.content')
 @section('content')
-<div class="container-fluid bg-d  pb-5">
-<section class="row bg--primay">
-    <div class="container-fluid position-relative" >
-        <div class="px-4 pb-5" style="min-height: 400px;">
-        <div >
-            <picture>
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(max-width: 576px)">
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(max-width: 768px)">
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(max-width: 992px)">
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(max-width: 1200px)">
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(max-width: 1400px)">
-                <source srcset="{{asset('asset/img/about-top.png')}}" media="(min-width: 1400px)">
-                <img src="{{asset('asset/img/about-top.png')}}" class="w-100"  alt="Responsive image">
-            </picture>
-        <div>
-            <div class="text-center position-absolute  start-50 translate-middle" style="bottom: 70px;">
-                <h1 class=" m-auto" style="font-weight: 700;font-size: 60px;line-height: 73px;text-align: center;letter-spacing: 0.06em;color: #FFFFFF;">Powering your events so <br> you can grow</h1>
+
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg1">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>{{ trans('text.about_us') }}</h3>
+                    <ul>
+                        <li>
+                            <a href="{{ route('home') }}">{{ trans('text.homepage') }}</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-chevrons-right'></i>
+                        </li>
+                        <li>{{ trans('text.about_us') }}</li>
+                    </ul>
+                </div>
             </div>
-            <div class="mt-3">
-            <button class="btn--secondary mx-3 position-absolute p-3 px-4 top-100 start-50 translate-middle">
-            Download for free
-            </button>
+        </div>
+        <!-- Inner Banner End -->
+
+        <!-- About Area -->
+        <div class="about-area about-max pt-100 pb-70">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-xxl-6">
+                        <div class="about-img about-ml">
+                            <img src="assets/img/about/3.jpg" alt="About Images">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-xxl-6">
+                        <div class="about-content about-width">
+                            <span>{{ trans('text.about_us') }}</span>
+                            <h2>We Are Helping People to Reach Their Customer Since 2005</h2>
+                            <p>
+                                It is a long established fact that a reader will be distracted 
+                                by the readable content of a page when looking at its layout. 
+                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                            </p>
+                            <p>
+                                As opposed to using 'Content here, content here', making it look 
+                                like readable English. Many desktop publishing packages and web 
+                                page editors now use Lorem Ipsum as their default model text, 
+                                and a search for 'lorem ipsum' will uncover many web sites still 
+                                in their infancy. Various versions have evolved over the years.
+                            </p>
+
+                            <div class="about-btn">
+                                <a href="#" class="default-btn">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
- 
         </div>
+        <!-- About Area End -->
+
+        <!-- Price Area -->
+        <div class="price-area price-shape pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>Pricing Table</span>
+                    <h2>We Have Pre-ready Pricing for Our Services</h2>
+                    <p>
+                        It is a long established fact that a reader will be 
+                        distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pt-45">
+                        <div class="tabs-item-list">
+                            <ul id="tabs-item" class="text-center">
+                                <li class="active">
+                                    <a href="#monthly" class="prices-tab">Monthly</a>
+                                </li> 
+                                <li>
+                                    <a href="#yearly" class="prices-tab">Yearly</a>
+                                </li> 
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="prices-content">
+                    <div id="monthly" class="active prices-content-area animated">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-price">
+                                    <span>Basic Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>30<sub>/month</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li class="color-gray">SEO Optimizing</li>
+                                        <li class="color-gray">Content Marketing</li>
+                                        <li class="color-gray">Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-price current">
+                                    <span>Standard Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>60<sub>/month</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li>SEO Optimizing</li>
+                                        <li class="color-gray">Content Marketing</li>
+                                        <li class="color-gray">Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+                                <div class="single-price">
+                                    <span>Premium Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>90<sub>/month</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li>SEO Optimizing</li>
+                                        <li>Content Marketing</li>
+                                        <li>Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="yearly" class="animated prices-content-area">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-price">
+                                    <span>Basic Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>70<sub>/Year</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li class="color-gray">SEO Optimizing</li>
+                                        <li class="color-gray">Content Marketing</li>
+                                        <li class="color-gray">Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="single-price current">
+                                    <span>Standard Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>120<sub>/Year</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li>SEO Optimizing</li>
+                                        <li class="color-gray">Content Marketing</li>
+                                        <li class="color-gray">Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+                                <div class="single-price">
+                                    <span>Premium Plan</span>
+                                    <div class="single-price-title">
+                                        <h2><sup>$</sup>170<sub>/Year</sub></h2>
+                                    </div>
+                                    <ul>
+                                        <li>Data Analysis</li>
+                                        <li>Website Building</li>
+                                        <li>Web Application</li>
+                                        <li>SEO Optimizing</li>
+                                        <li>Content Marketing</li>
+                                        <li>Social Marketing</li>
+                                    </ul>
+                                    <a href="#" class="get-btn">Get Stated</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Price Area End -->
+
+        <!-- Counter Area -->
+        <div class="counter-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-md-3">
+                        <div class="single-counter">
+                            <i class='flaticon-success'></i>
+                            <h3><span class="counter">15</span></h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-3">
+                        <div class="single-counter">
+                            <i class='flaticon-launch'></i>
+                            <h3><span class="counter">900</span>+</h3>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-3">
+                        <div class="single-counter">
+                            <i class='flaticon-customer'></i>
+                            <h3><span class="counter">800</span>+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-md-3">
+                        <div class="single-counter">
+                            <i class='flaticon-team-building'></i>
+                            <h3><span class="counter">25</span>+</h3>
+                            <p>Expert Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="container py-5">
-    <div class="row text-center text-white py-5">
-        <div class="col-md-4">
-          <h3 class="pt-5 pb-1" style="font-weight: 700;font-size: 18px;line-height: 50px;">Check Any Detail Of Events</h3>
-          <img src="{{asset('asset/img/line2.png')}}"     alt="Responsive image" class="pb-5">
-          <p class="p-about">
-          Connecting people with events, live musics, concerts, activities and parties.
-          </p>
-          <p  class="p-about">
-          People can see the events around them and they can check and see all the event types.
-          </p>
+        <!-- Counter Area End -->
+
+        <!-- Client Area -->
+        <div class="client-area pt-100 pb-70">
+            <div class="container-fluid p-0">
+                <div class="section-title text-center">
+                    <span>Testimonial</span>
+                    <h2>Our Clients Feedback</h2>
+                    <p>
+                        It is a long established fact that a reader will be distracted by 
+                        the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+
+                <div class="client-slider owl-carousel owl-theme">
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/t1.png" alt="Testimonial Images">
+                        </div>
+                        <h3>John Doe</h3>
+                        <p>
+                            Restaurants range from inexpensive and informal lunching or dining places 
+                            catering to people working nearby, with modest food served in simple settings at low prices.
+                        </p>
+                    </div>
+
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/t4.png" alt="Testimonial Images">
+                        </div>
+                        <h3>Knot Doe</h3>
+                        <p>
+                            Restaurants range from inexpensive and informal lunching or dining places 
+                            catering to people working nearby, with modest food served in simple settings at low prices.
+                        </p>
+                    </div>
+
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/t5.png" alt="Testimonial Images">
+                        </div>
+                        <h3>John Smith</h3>
+                        <p>
+                            Restaurants range from inexpensive and informal lunching or dining places 
+                            catering to people working nearby, with modest food served in simple settings at low prices.
+                        </p>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/t3.png" alt="Testimonial Images">
+                        </div>
+                        <h3>Evanaa</h3>
+                        <p>
+                            Restaurants range from inexpensive and informal lunching or dining places 
+                            catering to people working nearby, with modest food served in simple settings at low prices.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h3 class="pt-5 pb-1" style="font-weight: 700;font-size: 18px;line-height: 50px;">Discover The Best Events</h3>
-          <img src="{{asset('asset/img/line2.png')}}"     alt="Responsive image" class="pb-5">
-          <p  class="p-about">
-          Freelancers can have their profile and details about their business and publish, from this way they can be found easily by the event hostess and even by normal people who would like to make small parties with families and friends.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h3 class="pt-5 pb-1" style="font-weight: 700;font-size: 18px;line-height: 50px;">Get More Audiences</h3>
-          <img src="{{asset('asset/img/line2.png')}}"     alt="Responsive image" class="pb-5">
-          <p  class="p-about">
-          The hoster can get more clients to their events.
-          </p>
-          <p  class="p-about">
-          Artists can share their profile with their contacts and social media profiles.
-          </p>
-          <p  class="p-about">
-          The service company can make their promotions.
-          </p>
-        </div>
-    </div>
-    </div>
-</section>
-<section>
-<div class="container py-5 text-center">
-<img src="{{asset('asset/img/about-vector.png')}}" alt="Responsive image" width="50px">
-</div>
-</section>
-<section>
-    <div class="container pb-5">
-    <h2 class="text-center py-5" style="font-weight: 700;font-size: 45px;line-height: 26px;color: #7E6EF6;">Why Eventy?</h2>
-    <p class="py-1" style="font-weight: 400;font-size: 20px;line-height: 33px;color: #F2EEEE;">
-    One of the main problems in the region for the people is to find a place to spend time with friends and families.
-    </p>
-    <p class="py-1" style="font-weight: 400;font-size: 20px;line-height: 33px;color: #F2EEEE;">
-    Usually, it takes a long time to find such a place. People are using social media and they are checking restaurant by restaurant pages to see if any of them has any events.
-    </p>
-    <p class="py-1" style="font-weight: 400;font-size: 20px;line-height: 33px;color: #F2EEEE;">
-    Sometimes people regret the event they went to there. Because they did not have enough information about the place, or the quality of the hoster is very low or their price is very high.
-    </p>
-    </div>
-</section>
-</div>
+        <!-- Client Area End -->
+
 @endsection

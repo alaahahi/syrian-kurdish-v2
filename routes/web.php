@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\App;
 */
 
 Route::get('/lang/{locale}', function ($locale) {
-    
+
     session()->put('selectedlang', $locale);
     setcookie('selectedlang', $locale, time() + (60 * 24 * 30), '/');
     App::setLocale($locale);
@@ -60,3 +60,19 @@ Route::post('sendNotification', [NotificationController::class, 'sendNotificatio
 
 
 Route::post('/store-token', [NotificationController::class, 'storeToken'])->name('store.token');
+Route::get('/network-goals', function () {
+    return view('network_goals');
+})->name('network.goals');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+Route::get('/home', function () {
+    return view('index');
+})->name('home');

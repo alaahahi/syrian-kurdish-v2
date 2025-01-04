@@ -14,7 +14,7 @@
                             
                             <div class="banner-btn">
                                 <a href="contact.html" class="default-btn">{{trans('text.membership_request')}}</a>
-                                <a href="#" class="default-btn active">{{trans('text.Show_More')}}</a>
+                                <a href="{{ route('about') }}" class="default-btn active">{{trans('text.Show_More')}}</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                                 {{trans('text.network_principles_and_goals_5')}}
                             </p>
                             <div class="about-btn">
-                                <a href="#" class="default-btn">{{trans('text.Show_More')}}</a>
+                                <a href="{{ route('services') }}" class="default-btn">{{trans('text.Show_More')}}</a>
                             </div>
                         </div>
                     </div>

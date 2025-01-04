@@ -8,9 +8,9 @@ setcookie('selectedlang', $select_lang, time() + 60 * 24 * 30, '/');
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          @if($select_lang=='ar')
-         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css"> 
+         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
          @else
-         <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
          @endif
 
         <!-- Owl Carousel CSS -->
@@ -20,7 +20,7 @@ setcookie('selectedlang', $select_lang, time() + 60 * 24 * 30, '/');
         <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
         <!-- Animate Min CSS -->
         <link rel="stylesheet" href="assets/css/animate.min.css">
-        <!-- Boxicons CSS --> 
+        <!-- Boxicons CSS -->
         <link rel="stylesheet" href="assets/css/boxicons.min.css">
         <!-- Flaticon CSS -->
         <link rel="stylesheet" href="assets/fonts/flaticon.css">
@@ -56,7 +56,7 @@ setcookie('selectedlang', $select_lang, time() + 60 * 24 * 30, '/');
                        <img src="assets/img/sticky-logo.png" class="logo-two" alt="Logo">
                    </a>
                </div>
-   
+
                <!-- Menu For Desktop Device -->
                <div class="main-nav">
                    <div class="container">
@@ -67,38 +67,38 @@ setcookie('selectedlang', $select_lang, time() + 60 * 24 * 30, '/');
                            <a class="navbar-brand-sticky" href="index.html">
                                <img src="assets/img/sticky-logo.png" alt="Logo">
                            </a>
-   
+
                            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                                <ul class="navbar-nav m-auto">
                                    <li class="nav-item">
-                                       <a href="#" class="nav-link active">
-                                           {{trans('text.homepage')}} 
+                                       <a href="{{ route('home') }}" class="nav-link active">
+                                           {{trans('text.homepage')}}
                                        </a>
                                    </li>
                                    <li class="nav-item">
-                                       <a href="about.html" class="nav-link">
-                                        {{trans('text.principles_of_networking')}} 
+                                       <a href="{{ route('services') }}" class="nav-link">
+                                        {{trans('text.principles_of_networking')}}
                                        </a>
                                    </li>
                                    <li class="nav-item">
-                                       <a href="#" class="nav-link">
-                                        {{trans('text.network_goals')}}  
+                                       <a href="{{ route('network.goals') }}" class="nav-link">
+                                        {{trans('text.network_goals')}}
                                         </a>
                                    </li>
                                    <li class="nav-item">
                                        <a href="#" class="nav-link">
-                                        {{trans('text.network_message')}}   
+                                        {{trans('text.network_message')}}
                                        </a>
                                    </li>
                                    <li class="nav-item">
-                                       <a href="testimonial.html" class="nav-link">
-                                        {{trans('text.about_network')}}   
+                                       <a href="{{ route('about') }}" class="nav-link">
+                                        {{trans('text.about_network')}}
                                        </a>
                                    </li>
-                     
+
                                    <li class="nav-item">
-                                       <a href="contact.html" class="nav-link">
-                                        {{trans('text.contact')}}   
+                                       <a href="{{ route('contact') }}" class="nav-link">
+                                        {{trans('text.contact')}}
                                        </a>
                                    </li>
                                </ul>
