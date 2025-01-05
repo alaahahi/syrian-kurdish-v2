@@ -104,7 +104,7 @@ setcookie('selectedlang', $select_lang, time() + 60 * 24 * 30, '/');
                                </ul>
 
                                <div class="menu-btn">
-                                   <a href="#" class="seo-btn">{{trans('text.membership_request')}}  </a>
+                                   <a href="{{ route('membership.request') }}" class="seo-btn">{{trans('text.membership_request')}}  </a>
                                </div>
                            </div>
                        </nav>

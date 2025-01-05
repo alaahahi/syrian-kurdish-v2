@@ -13,7 +13,7 @@
                             </p>
                             
                             <div class="banner-btn">
-                                <a href="contact.html" class="default-btn">{{trans('text.membership_request')}}</a>
+                                <a href="{{ route('membership.request') }}" class="default-btn">{{trans('text.membership_request')}}</a>
                                 <a href="{{ route('about') }}" class="default-btn active">{{trans('text.Show_More')}}</a>
                             </div>
                         </div>
