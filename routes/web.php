@@ -76,3 +76,7 @@ Route::get('/services', function () {
 Route::get('/home', function () {
     return view('index');
 })->name('home');
+
+Route::get('/membership.request', function () {
+    return view('membership_request');
+})->name('membership.request');
