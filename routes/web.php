@@ -80,3 +80,7 @@ Route::get('/home', function () {
 Route::get('/membership.request', function () {
     return view('membership_request');
 })->name('membership.request');
+
+Route::get('/news.details', function () {
+    return view('news_details');
+})->name('news.details');

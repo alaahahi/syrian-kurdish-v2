@@ -37,6 +37,7 @@
         autoplay: true,
         rtl: true,  // Enable right-to-left support
         autoplayHoverPause: true,
+        rtl: true, // Enable right-to-left support
         responsive:{
             0:{
                 items: 2
@@ -61,6 +62,7 @@
         autoplay: true,
         autoplayHoverPause: true,
         nav: true,
+        rtl: true, // Enable right-to-left support
         navText: [
             "<i class='bx bx-left-arrow-alt'></i>",
             "<i class='bx bx-right-arrow-alt'></i>"
@@ -86,6 +88,7 @@
         autoplay: true,
         autoplayHoverPause: true,
         nav: true,
+        rtl: true, // Enable right-to-left support
         navText: [
             "<i class='bx bx-left-arrow-alt'></i>",
             "<i class='bx bx-right-arrow-alt'></i>"
@@ -101,6 +104,7 @@
         autoplay: true,
         autoplayHoverPause: true,
         nav: true,
+        rtl: true, // Enable right-to-left support
         navText: [
             "<i class='bx bx-left-arrow-alt'></i>",
             "<i class='bx bx-right-arrow-alt'></i>"
@@ -146,6 +150,7 @@
         autoplay: true,
         autoplayHoverPause: true,
         nav: true,
+        rtl: true, // Enable right-to-left support
         navText: [
             "<i class='bx bx-left-arrow-alt'></i>",
             "<i class='bx bx-right-arrow-alt'></i>"
