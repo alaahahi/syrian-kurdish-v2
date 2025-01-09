@@ -14,8 +14,8 @@
 
                         <div class="newsletter-area">
                             <form class="newsletter-form" data-toggle="validator" method="POST">
-                                <input type="email" class="form-control" placeholder="{{ trans('text.Email') }}" name="EMAIL" required
-                                    autocomplete="off">
+                                <input type="email" class="form-control" placeholder="{{ trans('text.Email') }}"
+                                    name="EMAIL" required autocomplete="off">
                                 <button class="subscribe-btn" type="submit">
                                     {{ trans('text.Subscribe') }}
                                 </button>
@@ -28,32 +28,33 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-list ml-50">
                         <h3>{{ trans('text.Services') }}</h3>
-                        <ul>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.SEO_Optimization') }}</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.Social_Marketing') }}</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.business_Growing') }}</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html"> {{ trans('text.Data_Analysis') }}</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.App_Development') }} </a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.Web_Development') }} </a>
-                            </li>
-                        </ul>
+                       <ul>
+    <li>
+        <i class='bx bxs-chevron-right'></i> 
+        <a href="{{ route('network.goals') }}">{{ __('text.direct_coverage') }}</a>
+    </li>
+    <li>
+        <i class='bx bxs-chevron-right'></i>
+        <a href="{{ route('network.goals') }}">{{ __('text.news_reports') }}</a>
+    </li>
+    <li>
+        <i class='bx bxs-chevron-right'></i>
+        <a href="{{ route('network.goals') }}">{{ __('text.political_economic_analysis') }}</a>
+    </li>
+    <li>
+        <i class='bx bxs-chevron-right'></i>
+        <a href="{{ route('network.goals') }}">{{ __('text.daily_newsletters') }}</a>
+    </li>
+    <li>
+        <i class='bx bxs-chevron-right'></i> 
+        <a href="{{ route('network.goals') }}">{{ __('text.live_streaming_services') }}</a>
+    </li>
+    <li>
+        <i class='bx bxs-chevron-right'></i>
+        <a href="{{ route('network.goals') }}">{{ __('text.exclusive_interviews') }}</a>
+    </li>
+</ul>
+
                     </div>
                 </div>
 
@@ -63,27 +64,27 @@
                         <ul>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="index.html">{{ trans('text.Home') }}</a>
+                                <a href="{{ route('home') }}">{{ trans('text.Home') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="services.html">{{ trans('text.Service') }}</a>
+                                <a href="{{ route('services') }}">{{ trans('text.Services') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="about.html">{{ trans('text.About_Us') }}</a>
+                                <a href="{{ route('about') }}">{{ trans('text.About_Us') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="testimonial.html">{{ trans('text.Testimonial') }}</a>
+                                <a href="{{ route('membership.request') }}">{{ trans('text.membership_request') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="blog.html">{{ trans('text.Blog') }}</a>
+                                <a href="{{ route('news.details') }}">{{ trans('text.News') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="contact.html">{{ trans('text.Contact') }}</a>
+                                <a href="{{ route('contact') }}">{{ trans('text.Contact') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -103,15 +104,7 @@
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="mailto:info@bonsa.com">info@bonsa.com</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="mailto:hello@bonsa.com">hello@bonsa.com</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                28/A Street, New York, USA
+                                <a href="mailto:info@bonsa.com">info@gmail.com</a>
                             </li>
                         </ul>
                     </div>

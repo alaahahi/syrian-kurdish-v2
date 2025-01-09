@@ -249,6 +249,7 @@ Section Title Style
     color: #ff4a35;
     font-weight: 500;
     line-height: 0;
+    font-size: 18px;
 }
 
 .section-title h2 {
@@ -400,8 +401,9 @@ Navbar Area
 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
     border: none;
     padding: 0;
-    border-radius: 0;
+    border-radius: 2px;
     background-color: #fff !important;
+    width:50%
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li {
@@ -418,6 +420,7 @@ Navbar Area
     -webkit-transition: 0.7s;
     transition: 0.7s;
     font-weight: 400;
+    
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
@@ -826,8 +829,12 @@ About Area
 
 .about-img {
     margin-bottom: 30px;
+    text-align: center; /* يجعل أي محتوى داخل العنصر في الوسط أفقياً */
 }
-
+.about-img img{
+    max-width: 90%;
+    /* display: inline-block; يضمن أن الصورة تُعامل كعنصر قابل للمحاذاة */
+}
 .about-content {
     margin-left: 30px;
     margin-bottom: 30px;
@@ -842,6 +849,7 @@ About Area
     color: #ff4a35;
     font-weight: 500;
     line-height: 0;
+    font-size: 18px;
 }
 
 .about-content h2 {
@@ -976,6 +984,13 @@ Service Area
     border-radius: 15px;
     margin-bottom: 30px;
 }
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .service-card:hover::before {
     background-image: url(../img/service-icon/card-shape-2.png);
@@ -1090,8 +1105,9 @@ Faq Area
 .faq-bg {
     background-color: #4356d6;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     height: auto;
+    
 }
 
 .faq-bg::before {
@@ -1124,16 +1140,18 @@ Faq Area
 }
 
 .faq-bg-into {
-    background-color: #fff;
+    background-color: #ffffff86;
     max-width: 1240px;
-    top: 100px;
+    top: 30px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     position: relative;
     z-index: 1;
 }
@@ -1306,14 +1324,14 @@ Portfolio Area
 ====================================*/
 .portfolio-area {
     position: relative;
-}
-
-.portfolio-area .owl-nav .owl-prev {
+  }
+  
+  .portfolio-area .owl-nav .owl-prev {
     position: absolute;
     margin-top: 0;
     top: 50%;
     -webkit-transform: translateY(-16px);
-    transform: translateY(-16px);
+            transform: translateY(-16px);
     left: 0;
     width: 40px;
     height: 40px;
@@ -1321,24 +1339,24 @@ Portfolio Area
     line-height: 0;
     background-color: #4356d6 !important;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     color: #fff !important;
     border-radius: 50px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-}
-
-.portfolio-area .owl-nav .owl-prev:hover {
+  }
+  
+  .portfolio-area .owl-nav .owl-prev:hover {
     background-color: #fff !important;
     color: #4356d6 !important;
-}
-
-.portfolio-area .owl-nav .owl-next {
+  }
+  
+  .portfolio-area .owl-nav .owl-next {
     position: absolute;
     margin-top: 0;
     top: 50%;
     -webkit-transform: translateY(-16px);
-    transform: translateY(-16px);
+            transform: translateY(-16px);
     right: 0;
     width: 40px;
     height: 40px;
@@ -1346,50 +1364,50 @@ Portfolio Area
     line-height: 0;
     background-color: #4356d6 !important;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     color: #fff !important;
     border-radius: 50px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-}
-
-.portfolio-area .owl-nav .owl-next:hover {
+  }
+  
+  .portfolio-area .owl-nav .owl-next:hover {
     background-color: #fff;
     color: #4356d6;
-}
-
-.portfolio-item {
+  }
+  
+  .portfolio-item {
     margin-bottom: 30px;
-}
-
-.portfolio-item .portfolio-img {
+  }
+  
+  .portfolio-item .portfolio-img {
     position: relative;
-}
-
-.portfolio-item .portfolio-img a {
+  }
+  
+  .portfolio-item .portfolio-img a {
     display: block;
-}
-
-.portfolio-item .portfolio-img a img {
+  }
+  
+  .portfolio-item .portfolio-img a img {
     border-radius: 10px;
-    height: 300px;
-}
-
-.portfolio-item .portfolio-tag {
+    min-height: 300px;
+  }
+  
+  .portfolio-item .portfolio-tag {
     position: absolute;
     bottom: 105px;
     left: 25px;
-}
-
-.portfolio-item .portfolio-tag a span {
+  }
+  
+  .portfolio-item .portfolio-tag a span {
     color: #fff;
     background-color: #ff4a35;
     padding: 7px 20px;
     border-radius: 50px;
     font-size: 13px;
-}
-
-.portfolio-item .portfolio-content {
+  }
+  
+  .portfolio-item .portfolio-content {
     position: absolute;
     bottom: 25px;
     left: 25px;
@@ -1399,29 +1417,30 @@ Portfolio Area
     width: 85%;
     -webkit-transition: 0.7s;
     transition: 0.7s;
-}
-
-.portfolio-item .portfolio-content:hover {
+    text-align:center
+  }
+  
+  .portfolio-item .portfolio-content:hover {
     background-color: #4356d6;
-}
-
-.portfolio-item .portfolio-content:hover h3 {
+  }
+  
+  .portfolio-item .portfolio-content:hover h3 {
     color: #fff;
-}
-
-.portfolio-item .portfolio-content:hover i {
+  }
+  
+  .portfolio-item .portfolio-content:hover i {
     background-color: #fff;
     color: #4356d6;
-}
-
-.portfolio-item .portfolio-content a h3 {
-    font-size: 20px;
+  }
+  
+  .portfolio-item .portfolio-content a h3 {
+    font-size: 16px;
     color: #070f4d;
     display: inline-block;
     margin-top: 6px;
-}
-
-.portfolio-item .portfolio-content i {
+  }
+  
+  .portfolio-item .portfolio-content i {
     width: 35px;
     height: 35px;
     background-color: #4356d6;
@@ -1433,11 +1452,12 @@ Portfolio Area
     top: 16px;
     position: absolute;
     right: 15px;
-}
-
-.portfolio-mt {
+  }
+  
+  .portfolio-mt {
     margin-top: 100px;
-}
+  }
+  
 
 /*=================================
 Portfolio Area End
@@ -2110,9 +2130,9 @@ Blog Card
 }
 
 .blog-card .blog-content .blog-tag {
-    position: absolute;
+    /* position: absolute;
     left: 25px;
-    bottom: 130px;
+    bottom: 130px; */
 }
 
 .blog-card .blog-content .blog-tag a {
@@ -2120,6 +2140,9 @@ Blog Card
 }
 
 .blog-card .blog-content .blog-tag a span {
+    position:absolute;
+    top:-18px;
+    /* left:0; */
     padding: 7px 20px;
     background-color: #ff4a35;
     color: #fff;
@@ -2563,13 +2586,14 @@ About Section
 
 .about-img-2 .about-man img {
     height: 570px;
-    margin-top: -80px;
+    width:430px;
+    margin-top: -40px;
 }
 
 .about-img-2 .about-man::before {
     content: "";
     position: absolute;
-    background-image: url(../img/about/bg-shape.png);
+    /* background-image: url(../img/about/44.png); */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3438,7 +3462,7 @@ Inner Banner
     top: 0;
     left: 0;
     right: 0;
-    background-color: #070f4d;
+    background-color: #565b7c;
     opacity: 0.8;
 }
 
@@ -3484,35 +3508,35 @@ Inner Banner
 }
 
 .inner-bg1 {
-    background-image: url(../img/inner-banner/1.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg2 {
-    background-image: url(../img/inner-banner/2.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg3 {
-    background-image: url(../img/inner-banner/3.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg4 {
-    background-image: url(../img/inner-banner/4.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg5 {
-    background-image: url(../img/inner-banner/5.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg6 {
-    background-image: url(../img/inner-banner/6.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg7 {
-    background-image: url(../img/inner-banner/7.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 .inner-bg8 {
-    background-image: url(../img/inner-banner/8.jpg);
+    background-image: url(../img/inner-banner/1.webp);
 }
 
 /*================================

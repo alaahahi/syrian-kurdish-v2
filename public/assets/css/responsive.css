@@ -686,6 +686,10 @@
         line-height: 45px;
         margin-bottom: 15px;
     }
+    .about-img img {
+        max-width: 60% !important;
+        /* display: inline-block; يضمن أن الصورة تُعامل كعنصر قابل للمحاذاة */
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -778,12 +782,20 @@
         float: right;
         margin-top: 5px;
     }
+    .about-img img {
+        max-width: 50% !important;
+        /* display: inline-block; يضمن أن الصورة تُعامل كعنصر قابل للمحاذاة */
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Default CSS */
     body {
         font-size: 14px;
+    }
+    .about-img img {
+        max-width: 40% !important;
+        /* display: inline-block; يضمن أن الصورة تُعامل كعنصر قابل للمحاذاة */
     }
     .ptb-100 {
         padding-top: 50px;

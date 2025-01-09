@@ -27,7 +27,7 @@ Route::get('/lang/{locale}', function ($locale) {
 
     // Redirect back to the previous page
     return redirect()->back();
-});
+})->name('lang.switch');
 
 
 // Route::get('/lang/{locale}', function () {
@@ -84,3 +84,7 @@ Route::get('/membership.request', function () {
 Route::get('/news.details', function () {
     return view('news_details');
 })->name('news.details');
+
+Route::get('/message', function () {
+    return view('message_network');
+})->name('message');
