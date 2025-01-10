@@ -139,9 +139,11 @@
                             <img src="assets/img/service-icon/1.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_1') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_1') }}</h3>
                         </a>
-
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_11') }}
+                        </p>
                     </div>
                 </div>
 
@@ -151,9 +153,9 @@
                             <img src="assets/img/service-icon/2.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_2') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_2') }}</h3>
                         </a>
-                        <p>
+                        <p class="truncate-text">
                             {{ trans('text.network_principles_and_goals_21') }}
                         </p>
                     </div>
@@ -165,9 +167,9 @@
                             <img src="assets/img/service-icon/3.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_3') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_3') }}</h3>
                         </a>
-                        <p>
+                        <p class="truncate-text">
                             {{ trans('text.network_principles_and_goals_31') }}
                         </p>
                     </div>
@@ -179,9 +181,9 @@
                             <img src="assets/img/service-icon/4.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_4') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_4') }}</h3>
                         </a>
-                        <p>
+                        <p class="truncate-text">
                             {{ trans('text.network_principles_and_goals_41') }}
                         </p>
                     </div>
@@ -193,9 +195,9 @@
                             <img src="assets/img/service-icon/5.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_5') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_5') }}</h3>
                         </a>
-                        <p>
+                        <p class="truncate-text">
                             {{ trans('text.network_principles_and_goals_51') }}
                         </p>
                     </div>
@@ -715,128 +717,101 @@
     </div>
     <!-- Blog Area End -->
 
-<!-- Faq Area  -->
-<div class="faq-area-bg pt-100 pb-70">
-    <div class="container">
-        <div class="section-title text-center">
-            <span>الأسئلة الشائعة</span>
-            <h2>كل ما تحتاج معرفته عن شبكتنا الإخبارية</h2>
-            <p>
-                نحن هنا للإجابة عن أسئلتك وتوضيح كل ما يتعلق بمحتوى شبكتنا وخدماتنا الإخبارية.
-            </p>
-        </div>
-        <div class="row align-items-center pt-45">
-            <div class="col-lg-6">
-                <div class="faq-accordion faq-accordion-width">
-                    <ul class="accordion">
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                ما نوع الأخبار التي تقدمها شبكتكم؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    نقدم تغطية شاملة تشمل الأخبار السياسية، الاقتصادية، الاجتماعية، 
-                                    التقنية، والرياضية، بالإضافة إلى مقالات رأي وتحقيقات معمقة.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                كيف يمكنني الاشتراك في نشراتكم الإخبارية؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    يمكنك الاشتراك في نشراتنا الإخبارية اليومية عن طريق إدخال بريدك الإلكتروني 
-                                    في قسم الاشتراكات الموجود على الصفحة الرئيسية.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                هل تقدمون خدمة الأخبار العاجلة؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    نعم، نوفر إشعارات فورية للأخبار العاجلة على موقعنا، ويمكنك تفعيلها 
-                                    لتصلك أحدث التطورات مباشرة.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title active" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                كيف يمكنني التواصل مع فريق التحرير؟
-                            </a>
-                            <div class="accordion-content show">
-                                <p>
-                                    يمكنك التواصل معنا عبر صفحة "اتصل بنا" الموجودة في الموقع، حيث تجد تفاصيل 
-                                    البريد الإلكتروني وأرقام التواصل المباشر.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Faq Area -->
+    <div class="faq-area-bg pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <span>{{ trans('text.common_questions') }}</span>
+                <h2>{{ trans('text.title') }}</h2>
+                <p>{{ trans('text.description') }}</p>
             </div>
-            <div class="col-lg-6">
-                <div class="faq-accordion faq-accordion-width">
-                    <ul class="accordion">
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                هل تقدمون مقالات الرأي؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    نعم، نوفر مقالات رأي وتحليلات متعمقة يكتبها نخبة من الخبراء والصحفيين 
-                                    المتخصصين في مختلف المجالات.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                كيف يمكنني تقديم مقترحات لتطوير الشبكة؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    نحن نرحب بجميع اقتراحاتك! يمكنك إرسال أفكارك من خلال نموذج الاتصال 
-                                    أو عبر بريدنا الإلكتروني الرسمي.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                هل الأخبار المقدمة لديكم موثوقة؟
-                            </a>
-                            <div class="accordion-content">
-                                <p>
-                                    جميع أخبارنا موثوقة ونستند في تقاريرنا إلى مصادر رسمية وصحفيين محترفين 
-                                    يلتزمون بالمعايير الأخلاقية للمهنة.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="accordion-item">
-                            <a class="accordion-title active" href="javascript:void(0)">
-                                <i class='bx bx-chevron-down'></i>
-                                هل يمكنني الإبلاغ عن خبر خاطئ؟
-                            </a>
-                            <div class="accordion-content show">
-                                <p>
-                                    بالتأكيد، نحن نشجع على الإبلاغ عن أي خطأ عبر التواصل معنا مباشرة 
-                                    عبر البريد الإلكتروني المخصص لهذا الغرض.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="row align-items-center pt-45">
+                <div class="col-lg-6">
+                    <div class="faq-accordion faq-accordion-width">
+                        <ul class="accordion">
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question1') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer1') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question2') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer2') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question3') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer3') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title active" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question4') }}
+                                </a>
+                                <div class="accordion-content show">
+                                    <p>{{ trans('text.answer4') }}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq-accordion faq-accordion-width">
+                        <ul class="accordion">
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question5') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer5') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question6') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer6') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question7') }}
+                                </a>
+                                <div class="accordion-content">
+                                    <p>{{ trans('text.answer7') }}</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title active" href="javascript:void(0)">
+                                    <i class='bx bx-chevron-down'></i>
+                                    {{ trans('text.question8') }}
+                                </a>
+                                <div class="accordion-content show">
+                                    <p>{{ trans('text.answer8') }}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Faq Area End -->
-
+    <!-- Faq Area End -->
 @endsection

@@ -29,27 +29,23 @@
                     <div class="service-dtls-img">
                         <img src="assets/img/service-icon/8.jpg" alt="Service Image">
                     </div>
-                    <h2>أهداف الشبكة الإخبارية</h2>
+                    <h2>{{ trans('text.service_details_heading') }}</h2>
                     <p>
-                        تسعى شبكتنا الإخبارية إلى تقديم تغطية شاملة وموثوقة للأحداث الجارية محلياً ودولياً، 
-                        مع التركيز على المصداقية والشفافية. نحن نهدف إلى أن نكون المصدر الأول للأخبار لكل من 
-                        يبحث عن المعلومة الدقيقة والتحليل العميق.
+                        {{ trans('text.service_details_paragraph1') }}
                     </p>
                     <p>
-                        نلتزم بتقديم محتوى إخباري متوازن يعكس تنوع وجهات النظر، ونعمل على تعزيز الوعي العام 
-                        عبر تقارير وتحليلات معمقة تلبي احتياجات جميع فئات المجتمع.
+                        {{ trans('text.service_details_paragraph2') }}
                     </p>
                     <p>
-                        من خلال فريق عملنا المحترف وشبكة مراسلينا المنتشرين حول العالم، نضمن نقل الأحداث مباشرة 
-                        وتوفير أحدث الأخبار لحظة بلحظة.
+                        {{ trans('text.service_details_paragraph3') }}
                     </p>
                     <div class="service-dtls-btn">
-                        <a href="contact.html" class="default-btn">تواصل معنا</a>
+                        <a href="contact.html" class="default-btn">{{ trans('text.contact_us') }}</a>
                     </div>
                     <div class="pager-area">
                         <ul class="pager">
-                            <li class="previous"><a href="#">السابق</a></li>
-                            <li class="next"><a href="#">التالي</a></li>
+                            <li class="previous"><a href="#">{{ trans('text.previous') }}</a></li>
+                            <li class="next"><a href="#">{{ trans('text.next') }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,25 +53,25 @@
 
             <div class="col-lg-4">
                 <div class="common-catagory">
-                    <h3>خدمات الشبكة الإخبارية</h3>
+                    <h3>{{ trans('text.news_network_services') }}</h3>
                     <ul class="catagory">
                         <li>
-                            <a href="#">تغطية مباشرة للأحداث <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.live_coverage') }} <i class='bx bx-plus'></i></a>
                         </li>
                         <li>
-                            <a href="#">تقارير وتحقيقات إخبارية <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.news_reports') }} <i class='bx bx-plus'></i></a>
                         </li>
                         <li>
-                            <a href="#">تحليلات سياسية واقتصادية <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.political_economic_analysis') }} <i class='bx bx-plus'></i></a>
                         </li>
                         <li>
-                            <a href="#">نشرات إخبارية يومية <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.daily_newsletters') }} <i class='bx bx-plus'></i></a>
                         </li>
                         <li>
-                            <a href="#">خدمات بث مباشر <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.live_streaming') }} <i class='bx bx-plus'></i></a>
                         </li>
                         <li>
-                            <a href="#">مقابلات حصرية مع صناع القرار <i class='bx bx-plus'></i></a>
+                            <a href="#">{{ trans('text.exclusive_interviews') }} <i class='bx bx-plus'></i></a>
                         </li>
                     </ul>
                 </div>
@@ -84,6 +80,7 @@
     </div>
 </div>
 <!-- Service Dtls End -->
+
 
 
 

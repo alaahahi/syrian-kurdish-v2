@@ -36,9 +36,11 @@
                             <img src="assets/img/service-icon/1.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_1') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_1') }}</h3>
                         </a>
-                       
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_11') }}
+                        </p>
                     </div>
                 </div>
 
@@ -48,10 +50,10 @@
                             <img src="assets/img/service-icon/2.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_2') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_2') }}</h3>
                         </a>
-                        <p>
-                           {{ trans('text.network_principles_and_goals_21') }}
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_21') }}
                         </p>
                     </div>
                 </div>
@@ -62,10 +64,10 @@
                             <img src="assets/img/service-icon/3.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_3') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_3') }}</h3>
                         </a>
-                        <p>
-                           {{ trans('text.network_principles_and_goals_31') }}
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_31') }}
                         </p>
                     </div>
                 </div>
@@ -76,9 +78,9 @@
                             <img src="assets/img/service-icon/4.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_4') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_4') }}</h3>
                         </a>
-                        <p>
+                        <p class="truncate-text">
                             {{ trans('text.network_principles_and_goals_41') }}
                         </p>
                     </div>
@@ -90,41 +92,11 @@
                             <img src="assets/img/service-icon/5.png" alt="Images">
                         </a>
                         <a href="service-details.html">
-                            <h3>{{ trans('text.network_principles_and_goals_5') }}</h3>
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_5') }}</h3>
                         </a>
-                        <p>
-                           {{ trans('text.network_principles_and_goals_51') }}
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_51') }}
                         </p>
-                    </div>
-                </div>
-
-               
-
-                <div class="col-lg-12">
-                    <div class="pagination-area">
-                        <nav aria-label="Page navigation example text-center">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link page-links" href="#">
-                                        <i class='bx bx-chevrons-left'></i>
-                                    </a>
-                                </li>
-                                <li class="page-item current">
-                                    <a class="page-link" href="#">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">3</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        <i class='bx bx-chevrons-right'></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
