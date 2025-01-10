@@ -357,7 +357,7 @@ Navbar Area
 
 .main-nav nav .navbar-nav .nav-item a {
     text-transform: capitalize;
-    color: #222222;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -3462,7 +3462,7 @@ Inner Banner
     top: 0;
     left: 0;
     right: 0;
-    background-color: #565b7c;
+    background-color: #263dd7;
     opacity: 0.8;
 }
 

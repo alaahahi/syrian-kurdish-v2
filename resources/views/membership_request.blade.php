@@ -23,151 +23,162 @@
         <div class="container">
             <div class="card shadow-sm p-4">
                 <div class="card-header text-primary text-center">
-                    <h4>استمارة عضوية شبكة الصحفيين الكُرد السوريين</h4>
+                    <h4>{{ trans('text.Membership_form_of_the_Syrian_Kurdish_Journalists_Network') }}</h4>
                 </div>
-                <div class="card-body">
-                    <form>
-                        <!-- الصورة الشخصية -->
-                        <div class="mb-3">
-                            <label for="personalPhoto" class="form-label">الصورة الشخصية</label>
-                            <input type="file" class="form-control" id="personalPhoto">
-                        </div>
-
-                        <!-- المعلومات الشخصية -->
-                        <h5 class="mb-3">المعلومات الشخصية</h5>
-                        <div class="mb-3 row">
-                            <div class="col-md-4">
-                                <label for="nameKurdish" class="form-label">الاسم بالكُردية</label>
-                                <input type="text" class="form-control" id="nameKurdish" placeholder="Kurdî">
+                <form action="{{ route('membership.submit') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="card-body">
+                        <form>
+                            <!-- الصورة الشخصية -->
+                            <div class="mb-3">
+                                <label for="personalPhoto" class="form-label">{{ trans('text.personal_photo') }}</label>
+                                <input type="file" class="form-control" id="personalPhoto" name="personalPhoto">
                             </div>
-                            <div class="col-md-4">
-                                <label for="nameArabic" class="form-label">الاسم بالعربية</label>
-                                <input type="text" class="form-control" id="nameArabic" placeholder="العربية">
+        
+                            <!-- المعلومات الشخصية -->
+                            <h5 class="mb-3">{{ trans('text.personal_information') }}</h5>
+                            <div class="mb-3 row">
+                                <div class="col-md-4">
+                                    <label for="nameKurdish" class="form-label">{{ trans('text.full_name_kurdish') }}</label>
+                                    <input type="text" class="form-control" id="nameKurdish" name="nameKurdish" placeholder="{{ trans('text.placeholder_kurdish') }}">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="nameArabic" class="form-label">{{ trans('text.full_name_arabic') }}</label>
+                                    <input type="text" class="form-control" id="nameArabic" name="nameArabic" placeholder="{{ trans('text.placeholder_arabic') }}">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="nameEnglish" class="form-label">{{ trans('text.full_name_english') }}</label>
+                                    <input type="text" class="form-control" id="nameEnglish" name="nameEnglish" placeholder="{{ trans('text.placeholder_english') }}">
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <label for="nameEnglish" class="form-label">الاسم بالإنكليزية</label>
-                                <input type="text" class="form-control" id="nameEnglish" placeholder="English">
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label for="birthPlaceDate" class="form-label">{{ trans('text.birth_place_date') }}</label>
+                                    <input type="text" class="form-control" id="birthPlaceDate" name="birthPlaceDate">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="gender" class="form-label">{{ trans('text.gender') }}</label>
+                                    <select class="form-select" id="gender" name="gender">
+                                        <option value="">{{ trans('text.gender_select') }}</option>
+                                        <option value="male">{{ trans('text.gender_male') }}</option>
+                                        <option value="female">{{ trans('text.gender_female') }}</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="bloodType" class="form-label">{{ trans('text.blood_type') }}</label>
+                                    <input type="text" class="form-control" id="bloodType" name="bloodType" placeholder="{{ trans('text.blood_type_placeholder') }}">
+                                </div>
                             </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <div class="col-md-6">
-                                <label for="birthPlaceDate" class="form-label">مكان وتاريخ الولادة</label>
-                                <input type="text" class="form-control" id="birthPlaceDate">
+                            <div class="mb-3">
+                                <label for="nationality" class="form-label">{{ trans('text.nationality') }}</label>
+                                <input type="text" class="form-control" id="nationality" name="nationality">
                             </div>
-                            <div class="col-md-3">
-                                <label for="gender" class="form-label">الجنس</label>
-                                <select class="form-select" id="gender">
-                                    <option value="">اختر...</option>
-                                    <option value="male">ذكر</option>
-                                    <option value="female">أنثى</option>
-                                </select>
+        
+                            <!-- العنوان -->
+                            <h5 class="mb-3">{{ trans('text.residence_address') }}</h5>
+                            <div class="mb-3">
+                                <label for="residenceAddress" class="form-label">{{ trans('text.residence_address') }}</label>
+                                <input type="text" class="form-control" id="residenceAddress" name="residenceAddress">
                             </div>
-                            <div class="col-md-3">
-                                <label for="bloodType" class="form-label">زمرة الدم</label>
-                                <input type="text" class="form-control" id="bloodType" placeholder="مثال: A+">
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">{{ trans('text.phone_number') }}</label>
+                                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="{{ trans('text.phone_number_placeholder') }}">
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="nationality" class="form-label">الجنسية</label>
-                            <input type="text" class="form-control" id="nationality">
-                        </div>
-
-                        <!-- العنوان -->
-                        <h5 class="mb-3">العنوان</h5>
-                        <div class="mb-3">
-                            <label for="residenceAddress" class="form-label">عنوان الإقامة</label>
-                            <input type="text" class="form-control" id="residenceAddress">
-                        </div>
-                        <div class="mb-3">
-                            <label for="phoneNumber" class="form-label">رقم الموبايل (الواتس)</label>
-                            <input type="tel" class="form-control" id="phoneNumber" placeholder="+963-XXXXXXXXX">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">البريد الإلكتروني</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="facebookLink" class="form-label">فيس بوك (اختياري)</label>
-                            <input type="url" class="form-control" id="facebookLink"
-                                placeholder="رابط حسابك على فيس بوك">
-                        </div>
-
-                        <!-- الشهادة الدراسية -->
-                        <h5 class="mb-3">الشهادة الدراسية</h5>
-                        <div class="mb-3">
-                            <label for="education" class="form-label">التحصيل العلمي</label>
-                            <input type="text" class="form-control" id="education">
-                        </div>
-                        <div class="mb-3">
-                            <label for="graduationDate" class="form-label">تاريخ الحصول عليها</label>
-                            <input type="date" class="form-control" id="graduationDate">
-                        </div>
-
-                        <!-- اللغات -->
-                        <h5 class="mb-3">اللُغات</h5>
-                        <div class="mb-3">
-                            <label class="form-label">الكُردية</label>
-                            <input type="text" class="form-control mb-2" placeholder="درجة الإتقان">
-                            <input type="text" class="form-control" placeholder="الشهادات (إن وجدت)">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">العربية</label>
-                            <input type="text" class="form-control mb-2" placeholder="درجة الإتقان">
-                            <input type="text" class="form-control" placeholder="الشهادات (إن وجدت)">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">الإنكليزية</label>
-                            <input type="text" class="form-control mb-2" placeholder="درجة الإتقان">
-                            <input type="text" class="form-control" placeholder="الشهادات (إن وجدت)">
-                        </div>
-
-                        <!-- العمل -->
-                        <h5 class="mb-3">العمل</h5>
-                        <div class="mb-3">
-                            <label for="pastExperiences" class="form-label">الخبرات السابقة</label>
-                            <textarea class="form-control" id="pastExperiences" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="currentJob" class="form-label">العمل الحالي</label>
-                            <input type="text" class="form-control" id="currentJob">
-                        </div>
-                        <div class="mb-3">
-                            <label for="jobTitle" class="form-label">الوظيفة</label>
-                            <input type="text" class="form-control" id="jobTitle">
-                        </div>
-                        <div class="mb-3">
-                            <label for="hiringDate" class="form-label">تاريخ التعيين</label>
-                            <input type="date" class="form-control" id="hiringDate">
-                        </div>
-                        <div class="mb-3">
-                            <label for="institution" class="form-label">المؤسسة</label>
-                            <input type="text" class="form-control" id="institution">
-                        </div>
-
-                        <!-- التعهد -->
-                        <h5 class="mb-3">التعهد</h5>
-                        <div class="form-check mb-3">
-                            <input type="checkbox" class="form-check-input" id="agreement" required>
-                            <label class="form-check-label" for="agreement">أتعهد بالالتزام بالنظام الأساسي للشبكة وميثاق
-                                الشرف الصحفي.</label>
-                        </div>
-
-                        <!-- التوقيع والتاريخ -->
-                        <div class="mb-3">
-                            <label for="signature" class="form-label">توقيع صاحب الطلب</label>
-                            <input type="text" class="form-control" id="signature">
-                        </div>
-                        <div class="mb-3">
-                            <label for="submissionDate" class="form-label">تاريخ التقديم</label>
-                            <input type="date" class="form-control" id="submissionDate">
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" class="btn default-btn">إرسال الطلب</button>
-                        </div>
-                    </form>
-                </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">{{ trans('text.email') }}</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="{{ trans('text.email_placeholder') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="facebookLink" class="form-label">{{ trans('text.facebook_link') }}</label>
+                                <input type="url" class="form-control" id="facebookLink" name="facebookLink" placeholder="{{ trans('text.facebook_link_placeholder') }}">
+                            </div>
+        
+                            <!-- الشهادة الدراسية -->
+                            <h5 class="mb-3">{{ trans('text.educational_certificate') }}</h5>
+                            <div class="mb-3">
+                                <label for="education" class="form-label">{{ trans('text.education') }}</label>
+                                <input type="text" class="form-control" id="education" name="education">
+                            </div>
+                            <div class="mb-3">
+                                <label for="graduationDate" class="form-label">{{ trans('text.graduation_date') }}</label>
+                                <input type="date" class="form-control" id="graduationDate" name="graduationDate">
+                            </div>
+        
+                            <!-- اللغات -->
+                            <h5 class="mb-3">{{ trans('text.languages') }}</h5>
+                            <div class="mb-3">
+                                <label class="form-label">{{ trans('text.kurdish') }}</label>
+                                <input type="text" class="form-control mb-2" id="KurdishLang" name="KurdishLang" placeholder="{{ trans('text.proficiency_degree') }}">
+                                <input type="text" class="form-control" id="KurdishLangCertifications" name="KurdishLangCertifications" placeholder="{{ trans('text.certifications_if_any') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ trans('text.arabic') }}</label>
+                                <input type="text" class="form-control mb-2" id="ArabicLang" name="ArabicLang" placeholder="{{ trans('text.proficiency_degree') }}">
+                                <input type="text" class="form-control" id="ArabicLangCertifications" name="ArabicLangCertifications" placeholder="{{ trans('text.certifications_if_any') }}">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ trans('text.english') }}</label>
+                                <input type="text" class="form-control mb-2" id="EnglishLang" name="EnglishLang" placeholder="{{ trans('text.proficiency_degree') }}">
+                                <input type="text" class="form-control" id="EnglishLangCertifications" name="EnglishLangCertifications" placeholder="{{ trans('text.certifications_if_any') }}">
+                            </div>
+        
+                            <!-- العمل -->
+                            <h5 class="mb-3">{{ trans('text.work') }}</h5>
+                            <div class="mb-3">
+                                <label for="pastExperiences" class="form-label">{{ trans('text.past_experiences') }}</label>
+                                <textarea class="form-control" id="pastExperiences" name="pastExperiences" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="currentJob" class="form-label">{{ trans('text.current_job') }}</label>
+                                <input type="text" class="form-control" id="currentJob" name="currentJob">
+                            </div>
+                            <div class="mb-3">
+                                <label for="jobTitle" class="form-label">{{ trans('text.job_title') }}</label>
+                                <input type="text" class="form-control" id="jobTitle" name="jobTitle">
+                            </div>
+                            <div class="mb-3">
+                                <label for="hiringDate" class="form-label">{{ trans('text.hiring_date') }}</label>
+                                <input type="date" class="form-control" id="hiringDate" name="hiringDate">
+                            </div>
+                            <div class="mb-3">
+                                <label for="institution" class="form-label">{{ trans('text.institution') }}</label>
+                                <input type="text" class="form-control" id="institution" name="institution">
+                            </div>
+        
+                            <!-- التعهد -->
+                            <h5 class="mb-3">{{ trans('text.commitment') }}</h5>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                                <label class="form-check-label" for="agreement">{{ trans('text.agreement_label') }}</label>
+                            </div>
+        
+                            <!-- التوقيع والتاريخ -->
+                            {{-- <div class="mb-3">
+                                <label for="signature" class="form-label">{{ trans('text.signature') }}</label>
+                                <input type="text" class="form-control" id="signature" name="signature">
+                            </div>
+                            <div class="mb-3">
+                                <label for="submissionDate" class="form-label">{{ trans('text.submission_date') }}</label>
+                                <input type="date" class="form-control" id="submissionDate" name="submissionDate">
+                            </div> --}}
+        
+                            <div class="text-center">
+                                <button type="submit" class="btn default-btn">{{ trans('text.submit_request') }}</button>
+                            </div>
+                        </form>
+                        @if($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    
 @endsection

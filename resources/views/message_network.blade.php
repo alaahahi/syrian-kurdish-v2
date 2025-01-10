@@ -92,5 +92,11 @@
     </div>
 </div>
 <!-- Faq Area End -->
-
+<style>
+    .main-nav nav .navbar-nav .nav-item a {
+        text-transform: capitalize;
+        color: #222222;
+        font-weight: 400;
+    }
+</style>
 @endsection

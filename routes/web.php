@@ -7,6 +7,7 @@ use App\Http\Controllers\Main\MainController;
 use App\Http\Controllers\Admin\AdminController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\App;
+use App\Http\Controllers\MembershipRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,9 +43,6 @@ Route::get('link', function () {
 });
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
 Route::get('/', [MainController::class, 'index']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/parties', [MainController::class, 'parties']);
@@ -88,3 +86,9 @@ Route::get('/news.details', function () {
 Route::get('/message', function () {
     return view('message_network');
 })->name('message');
+
+Route::post('/submit-membership', [MembershipRequestController::class, 'store'])->name('membership.submit');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
