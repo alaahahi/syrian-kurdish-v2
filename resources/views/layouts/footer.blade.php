@@ -6,7 +6,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-single">
                         <div class="footer-single-content">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/img/sticky-logo.png" alt="Logo">
                             </a>
                             <p> {{ trans('text.about_title_1') }}</p>
@@ -123,7 +123,9 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>{{ trans('text.reserved_by') }}
-                            <a href="#" target="_blank">Alaa's Team</a>
+                            <a href="#">{{ trans('text.syrian_kurdish_journalists_network') }}</a>
+                            {{ trans('text.by') }}
+                            <a href="https://intellijapp.github.io/" target="_blank">Intellijapp</a>
                         </p>
                     </div>
                 </div>

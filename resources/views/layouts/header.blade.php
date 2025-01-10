@@ -55,7 +55,7 @@ dir="rtl"
     <div class="navbar-area">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="assets/img/logo.png" class="logo-one" alt="Logo">
                 <img src="assets/img/sticky-logo.png" class="logo-two" alt="Logo">
             </a>
@@ -65,10 +65,10 @@ dir="rtl"
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img src="assets/img/logo.png" alt="Logo">
                     </a>
-                    <a class="navbar-brand-sticky" href="index.html">
+                    <a class="navbar-brand-sticky" href="/">
                         <img src="assets/img/sticky-logo.png" alt="Logo">
                     </a>
 

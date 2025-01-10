@@ -78,12 +78,9 @@
         <section class="contact-section pb-100">
             <div class="container">
                 <div class="section-title text-center">
-                    <span>Contact Us</span>
-                    <h2>Drop A Message For Any Query</h2>
-                    <p>
-                        It is a long established fact that a reader will be distracted by
-                        the readable content of a page when looking at its layout.
-                    </p>
+                    <span>{{ trans('text.contact_us') }}</span>
+                    <h2>{{ trans('text.Drop_A_Message_For_Any_Query') }}</h2>
+                  
                 </div>
                 <div class="contact-wrap pt-45">
                    <div class="contact-wrap-form">
@@ -142,7 +139,7 @@
         <!-- Map Area Section Start -->
         <div class="map-area">
             <div class="container-fluid p-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991517034!2d-74.25987556253516!3d40.697670063539654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1587753923814!5m2!1sen!2sbd"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60436.3588348875!2d41.16348885241999!3d37.049079666748185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400a0579690ce791%3A0xcc7364779b0bff3f!2sQamishli%2C%20Syria!5e1!3m2!1sen!2sbd!4v1736476767156!5m2!1sen!2sbd" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <!-- Map Area Section End-->
