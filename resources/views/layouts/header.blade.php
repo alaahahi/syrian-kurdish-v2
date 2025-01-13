@@ -121,6 +121,12 @@ dir="rtl"
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a href="{{ route('lang.switch', 'fa') }}"
+                                            class="dropdown-item {{ app()->getLocale() === 'fa' ? 'active' : '' }}">
+                                            KR الكردية
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a href="{{ route('lang.switch', 'ar') }}"
                                             class="dropdown-item {{ app()->getLocale() === 'ar' ? 'active' : '' }}">
                                             🇸🇦 العربية
