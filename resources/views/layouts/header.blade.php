@@ -109,7 +109,7 @@ dir="rtl"
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link" id="languageDropdown"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    {{ app()->getLocale() === 'ar' ? 'AR' : 'EN' }}
+                                    {{ app()->getLocale() === 'ar' ? 'AR' : (app()->getLocale() === 'en' ? 'EN' : 'KU') }}
                                     <i class='bx bxs-chevron-right'></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" style="min-width: 100px;"
@@ -121,8 +121,8 @@ dir="rtl"
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ route('lang.switch', 'fa') }}"
-                                            class="dropdown-item {{ app()->getLocale() === 'fa' ? 'active' : '' }}">
+                                        <a href="{{ route('lang.switch', 'ku') }}"
+                                            class="dropdown-item {{ app()->getLocale() === 'ku' ? 'active' : '' }}">
                                             KR الكردية
                                         </a>
                                     </li>
