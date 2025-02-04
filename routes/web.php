@@ -58,9 +58,9 @@ Route::post('sendNotification', [NotificationController::class, 'sendNotificatio
 
 
 Route::post('/store-token', [NotificationController::class, 'storeToken'])->name('store.token');
-Route::get('/network-goals', function () {
-    return view('network_goals');
-})->name('network.goals');
+Route::get('/admin-structure', function () {
+    return view('adminStructure');
+})->name('admin.structure');
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
@@ -83,12 +83,13 @@ Route::get('/news.details', function () {
     return view('news_details');
 })->name('news.details');
 
-Route::get('/message', function () {
-    return view('message_network');
-})->name('message');
 
 Route::post('/submit-membership', [MembershipRequestController::class, 'store'])->name('membership.submit');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/membership', function () {
+    return view('membership');
+})->name('membership');

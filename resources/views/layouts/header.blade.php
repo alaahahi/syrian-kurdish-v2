@@ -76,22 +76,22 @@ dir="rtl"
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a href="{{ route('home') }}" class="nav-link active">
-                                    {{ trans('text.homepage') }}
+                                    {{ trans('text.News') }}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                             <li class="nav-item">
                                 <a href="{{ route('services') }}" class="nav-link">
-                                    {{ trans('text.principles_of_networking') }}
+                                    {{ trans('text.press_freedoms') }}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('network.goals') }}" class="nav-link">
-                                    {{ trans('text.network_goals') }}
+                                <a href="{{ route('admin.structure') }}" class="nav-link">
+                                    {{ trans('text.administrative_structure') }}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('message') }}" class="nav-link">
-                                    {{ trans('text.network_message') }}
+                                <a href="{{ route('membership') }}" class="nav-link">
+                                    {{ trans('text.membership') }}
                                 </a>
                             </li>
                             <li class="nav-item">
