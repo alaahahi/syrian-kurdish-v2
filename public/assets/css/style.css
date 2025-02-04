@@ -1040,7 +1040,7 @@ Service Area
 
 .service-card a img {
     margin-bottom: 17px;
-    max-width: 100% !important;
+    max-height: 70px!important;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -3727,15 +3727,46 @@ Common Catagory
     transition: 0.9s;
 }
 
-.common-catagory .catagory li a:hover {
-    color: #fff;
-}
 
+.common-catagory .catagory li:hover a,
+.common-catagory .catagory li:hover p {
+    color: white !important;
+}
 .common-catagory .catagory li a i {
     float: right;
     font-size: 20px;
     position: relative;
     top: 4px;
+}
+.accordion-content ol {
+    list-style-type:square;  /* عرض التعداد الرقمي */
+    list-style-position: inside; /* ضمان ظهور الأرقام داخل النص */
+    padding-left: 20px; /* مسافة من الحافة اليسرى */
+    margin: 10px 0; /* مسافة علوية وسفلية */
+}
+
+/* ضبط عناصر <li> داخل <ol> */
+.accordion-content ol li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    padding: 5px 0;
+    color: #070f4d; /* لون النص */
+    font-size: 16px;
+    padding:10px
+}
+.accordion-content ol li::before {
+    content: none !important; /* إزالة أي تأثير سابق */
+}
+
+.accordion-content {
+    display: none; /* إخفاء المحتوى افتراضيًا */
+    padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block; /* إظهار المحتوى عند تفعيل العنصر */
 }
 
 /*================================

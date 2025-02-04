@@ -31,27 +31,27 @@
                        <ul>
     <li>
         <i class='bx bxs-chevron-right'></i> 
-        <a href="{{ route('network.goals') }}">{{ __('text.direct_coverage') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.direct_coverage') }}</a>
     </li>
     <li>
         <i class='bx bxs-chevron-right'></i>
-        <a href="{{ route('network.goals') }}">{{ __('text.news_reports') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.news_reports') }}</a>
     </li>
     <li>
         <i class='bx bxs-chevron-right'></i>
-        <a href="{{ route('network.goals') }}">{{ __('text.political_economic_analysis') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.political_economic_analysis') }}</a>
     </li>
     <li>
         <i class='bx bxs-chevron-right'></i>
-        <a href="{{ route('network.goals') }}">{{ __('text.daily_newsletters') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.daily_newsletters') }}</a>
     </li>
     <li>
         <i class='bx bxs-chevron-right'></i> 
-        <a href="{{ route('network.goals') }}">{{ __('text.live_streaming_services') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.live_streaming_services') }}</a>
     </li>
     <li>
         <i class='bx bxs-chevron-right'></i>
-        <a href="{{ route('network.goals') }}">{{ __('text.exclusive_interviews') }}</a>
+        <a href="{{ route('contact') }}">{{ __('text.exclusive_interviews') }}</a>
     </li>
 </ul>
 
