@@ -2186,7 +2186,7 @@ Footer Section
     position: absolute;
     background: #ffffff;
     height: 20%;
-    top: -70px;
+    top: -50px;
     -webkit-transform: skewY(175deg);
     transform: skewY(175deg);
     width: 100%;
@@ -3760,14 +3760,6 @@ Common Catagory
     content: none !important; /* إزالة أي تأثير سابق */
 }
 
-.accordion-content {
-    display: none; /* إخفاء المحتوى افتراضيًا */
-    padding: 10px;
-}
-
-.accordion-item.active .accordion-content {
-    display: block; /* إظهار المحتوى عند تفعيل العنصر */
-}
 
 /*================================
 Common Catagory End
