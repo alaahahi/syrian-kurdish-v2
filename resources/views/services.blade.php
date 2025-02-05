@@ -32,7 +32,7 @@
             <div class="service-slider owl-carousel owl-theme pt-45">
                 <!-- التقرير 1 -->
                 <div class="service-card">
-                    <a href="service-details.html">
+                    <a href="#">
                         <img src="assets/img/press/1.png" alt="Images">
                     </a>
                     <div class="report-content">
@@ -44,7 +44,7 @@
 
                 <!-- التقرير 2 -->
                 <div class="service-card">
-                    <a href="service-details.html">
+                    <a href="#">
                         <img src="assets/img/press/2.png" alt="Images">
                     </a>
                     <div class="report-content">
@@ -56,7 +56,7 @@
 
                 <!-- التقرير 3 -->
                 <div class="service-card">
-                    <a href="service-details.html">
+                    <a href="#">
                         <img src="assets/img/press/3.png" alt="Images">
                     </a>
                     <div class="report-content">
@@ -177,7 +177,7 @@
     </div>
 </div>
 
-<section class="press-freedom pb-70 mt-5">
+<section class="press-freedom pb-90 mt-5">
     <div class="container">
 
         <div class="card shadow-sm p-4">
