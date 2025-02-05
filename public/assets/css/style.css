@@ -2156,7 +2156,16 @@ Blog Card
 
 .blog-card .blog-content a h3 {
     font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    line-height: 1.5em; 
+    max-height: 4.5em; 
+    word-break: break-word; 
 }
+
 
 .blog-card .blog-content .read-btn {
     color: #4356d6;
