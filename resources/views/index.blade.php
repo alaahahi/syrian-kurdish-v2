@@ -645,7 +645,7 @@
     <!-- Testimonial Area End -->
 
     <!-- Blog Area -->
-    <div class="blog-area pb-70">
+    <div class="blog-area  pb-70">
         <div class="container">
             <div class="section-title text-center">
                 <span>{{ trans('text.news') }}</span>
@@ -655,11 +655,11 @@
 
                 </p>
             </div>
-            <div class="row pt-45">
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
+            <div class="row  pt-45">
+            <div class="service-slider owl-carousel owl-theme">
+                <div class="blog-card">
                         <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <img src="assets/img/blog/news3.webp" alt="Blog Images">
                             </a>
                         </div>
@@ -667,18 +667,15 @@
                             <div class="blog-tag">
                                 <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
                             </div>
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <h3>{{ trans('text.news_tit3') }}</h3>
                             </a>
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
+                <div class="blog-card">
                         <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <img src="assets/img/blog/news2.jpg" alt="Blog Images">
                             </a>
                         </div>
@@ -686,18 +683,16 @@
                             <div class="blog-tag">
                                 <a href="#"><span>{{ trans('text.portfolio_tit2') }}</span></a>
                             </div>
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <h3>{{ trans('text.news_tit2') }}</h3>
                             </a>
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                    <div class="blog-card">
+                <div class="blog-card">
                         <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <img src="assets/img/blog/news1.jpeg" alt="Blog Images">
                             </a>
                         </div>
@@ -705,13 +700,14 @@
                             <div class="blog-tag">
                                 <a href="#"><span>{{ trans('text.portfolio_tit3') }}</span></a>
                             </div>
-                            <a href="{{ route('news.details') }}">
+                            <a href="blog-details.html">
                                 <h3>{{ trans('text.news_tit1') }}</h3>
                             </a>
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
+            </div>
+                
             </div>
         </div>
     </div>
