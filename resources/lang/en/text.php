@@ -237,6 +237,7 @@ Welcome to the world of news from a different perspective, where credibility is 
     "kurdish" => "Kurdish",
     "arabic" => "Arabic",
     "english" => "English",
+    "german"=>"German",
     "proficiency_degree" => "Proficiency Degree",
     "certifications_if_any" => "Certifications (if any)",
     "work" => "Work",

@@ -227,6 +227,7 @@ Bi xêr hatin cîhana nûçeyan ji çavkaniyek din, ku bingehê xebata me çavka
     "kurdish" => "Kurdî",
     "arabic" => "Erebî",
     "english" => "Îngilîzî",
+    "german"=>"Almanî",
     "proficiency_degree" => "Asayiya Zimanî",
     "certifications_if_any" => "Sertîfîkayên Hêyî (heger hene)",
     "work" => "Kar",

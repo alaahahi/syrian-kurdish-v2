@@ -243,7 +243,7 @@ return [
         "kurdish" => "الكُردية",
         "arabic" => "العربية",
         "english" => "الإنكليزية",
-        "german"=>"German",
+        "german"=>"الالمانية",
         "proficiency_degree" => "درجة الإتقان",
         "certifications_if_any" => "الشهادات (إن وجدت)",
         "work" => "العمل",
