@@ -243,13 +243,13 @@
 								<h3 class="widget-title">Popular Posts</h3>
 								<div class="post-wrap">
 									<article class="item">
-										<a href="blog-details.html" class="thumb">
+										<a href="#" class="thumb">
 											<span class="fullimage cover bg1" role="img"></span>
 										</a>
 										<div class="info">
 											<time datetime="2020-06-30">Jun 20, 2020</time>
 											<h4 class="title usmall">
-												<a href="blog-details.html">
+												<a href="#">
 													Basic Guidline Layout for SEO  Bigenner Level
 												</a>
 											</h4>
@@ -257,13 +257,13 @@
 									</article>
 	
 									<article class="item">
-										<a href="blog-details.html" class="thumb">
+										<a href="#" class="thumb">
 											<span class="fullimage cover bg2" role="img"></span>
 										</a>
 										<div class="info">
 											<time datetime="2020-06-30">Jun 21, 2020</time>
 											<h4 class="title usmall">
-												<a href="blog-details.html">
+												<a href="#">
 													How to Become Most Skilled Person in Social Marketing
 												</a>
 											</h4>
@@ -271,13 +271,13 @@
 									</article>
 	
 									<article class="item">
-										<a href="blog-details.html" class="thumb">
+										<a href="#" class="thumb">
 											<span class="fullimage cover bg3" role="img"></span>
 										</a>
 										<div class="info">
 											<time datetime="2020-06-30">Jun  22, 2020</time>
 											<h4 class="title usmall">
-												<a href="blog-details.html">
+												<a href="#">
 													Basic Guidline Layout for SEO Bigenner Level
 												</a> 
 											</h4>
@@ -285,13 +285,13 @@
 									</article>
 									
 									<article class="item">
-										<a href="blog-details.html" class="thumb">
+										<a href="#" class="thumb">
 											<span class="fullimage cover bg4" role="img"></span>
 										</a>
 										<div class="info">
 											<time datetime="2020-06-30">Jun 23, 2020</time>
 											<h4 class="title usmall">
-												<a href="blog-details.html">
+												<a href="#">
 													How to Become Most Skilled Person in Social Marketing
 												</a>
 											</h4>

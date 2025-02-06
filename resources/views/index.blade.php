@@ -135,10 +135,10 @@
             <div class="row pt-45">
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-card">
-                        <a href="service-details.html">
+                        <a href="#">
                             <img src="assets/img/service-icon/1.png" alt="Images">
                         </a>
-                        <a href="service-details.html">
+                        <a href="#">
                             <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_1') }}</h3>
                         </a>
                         <p class="truncate-text">
@@ -149,10 +149,10 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-card">
-                        <a href="service-details.html">
+                        <a href="#">
                             <img src="assets/img/service-icon/2.png" alt="Images">
                         </a>
-                        <a href="service-details.html">
+                        <a href="#">
                             <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_2') }}</h3>
                         </a>
                         <p class="truncate-text">
@@ -163,10 +163,10 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-card">
-                        <a href="service-details.html">
+                        <a href="#">
                             <img src="assets/img/service-icon/3.png" alt="Images">
                         </a>
-                        <a href="service-details.html">
+                        <a href="#">
                             <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_3') }}</h3>
                         </a>
                         <p class="truncate-text">
@@ -177,10 +177,10 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-card">
-                        <a href="service-details.html">
+                        <a href="#">
                             <img src="assets/img/service-icon/4.png" alt="Images">
                         </a>
-                        <a href="service-details.html">
+                        <a href="#">
                             <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_4') }}</h3>
                         </a>
                         <p class="truncate-text">
@@ -191,10 +191,10 @@
 
                 <div class="col-lg-4 col-sm-6">
                     <div class="service-card">
-                        <a href="service-details.html">
+                        <a href="#">
                             <img src="assets/img/service-icon/5.png" alt="Images">
                         </a>
-                        <a href="service-details.html">
+                        <a href="#">
                             <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_5') }}</h3>
                         </a>
                         <p class="truncate-text">
@@ -302,14 +302,14 @@
             <div class="portfolio-slider pt-45 owl-carousel owl-theme">
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <a href="portfolio.html">
+                        <a href="#">
                             <img src="assets/img/portfolio/17.jpg" alt="Portfolio Images">
                         </a>
                         <div class="portfolio-tag">
                             <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
                         </div>
                         <div class="portfolio-content">
-                            <a href="portfolio.html">
+                            <a href="#">
                                 <h3>{{ trans('text.portfolio_desc1') }}</h3>
                             </a>
                             <i class='bx bxs-chevron-right'></i>
@@ -319,14 +319,14 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <a href="portfolio.html">
+                        <a href="#">
                             <img src="assets/img/portfolio/7.jpg" alt="Portfolio Images">
                         </a>
                         <div class="portfolio-tag">
                             <a href="#"><span>{{ trans('text.portfolio_tit2') }}</span></a>
                         </div>
                         <div class="portfolio-content">
-                            <a href="portfolio.html">
+                            <a href="#">
                                 <h3>{{ trans('text.portfolio_desc2') }}</h3>
                             </a>
                             <i class='bx bxs-chevron-right'></i>
@@ -336,14 +336,14 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <a href="portfolio.html">
+                        <a href="#">
                             <img src="assets/img/portfolio/3.jpeg" alt="Portfolio Images">
                         </a>
                         <div class="portfolio-tag">
                             <a href="#"><span>{{ trans('text.portfolio_tit3') }}</span></a>
                         </div>
                         <div class="portfolio-content">
-                            <a href="portfolio.html">
+                            <a href="#">
                                 <h3>{{ trans('text.portfolio_desc3') }}</h3>
                             </a>
                             <i class='bx bxs-chevron-right'></i>
@@ -353,14 +353,14 @@
 
                 <div class="portfolio-item">
                     <div class="portfolio-img">
-                        <a href="portfolio.html">
+                        <a href="#">
                             <img src="assets/img/portfolio/5.webp" alt="Portfolio Images">
                         </a>
                         <div class="portfolio-tag">
                             <a href="#"><span>{{ trans('text.portfolio_tit4') }}</span></a>
                         </div>
                         <div class="portfolio-content">
-                            <a href="portfolio.html">
+                            <a href="#">
                                 <h3>{{ trans('text.portfolio_desc4') }}</h3>
                             </a>
                             <i class='bx bxs-chevron-right'></i>
@@ -390,11 +390,11 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="member-card">
                         <div class="member-img">
-                            <a href="members.html">
+                            <a href="#">
                                 <img src="assets/img/member/team1.jpg" alt="Member Images">
                             </a>
                             <div class="member-content">
-                                <a href="members.html">
+                                <a href="#">
                                     <h3>John Doe</h3>
                                 </a>
                                 <span>{{ trans('text.team_tit1') }}</span>
@@ -425,11 +425,11 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="member-card">
                         <div class="member-img">
-                            <a href="members.html">
+                            <a href="#">
                                 <img src="assets/img/member/team2.jpg" alt="Member Images">
                             </a>
                             <div class="member-content">
-                                <a href="members.html">
+                                <a href="#">
                                     <h3>Knot Doe</h3>
                                 </a>
                                 <span>{{ trans('text.team_tit2') }}</span>
@@ -460,11 +460,11 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="member-card">
                         <div class="member-img">
-                            <a href="members.html">
+                            <a href="#">
                                 <img src="assets/img/member/team3.png" alt="Member Images">
                             </a>
                             <div class="member-content">
-                                <a href="members.html">
+                                <a href="#">
                                     <h3>Evanaa</h3>
                                 </a>
                                 <span>{{ trans('text.team_tit3') }}</span>
@@ -495,11 +495,11 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="member-card">
                         <div class="member-img">
-                            <a href="members.html">
+                            <a href="#">
                                 <img src="assets/img/member/team4.jpg" alt="Member Images">
                             </a>
                             <div class="member-content">
-                                <a href="members.html">
+                                <a href="#">
                                     <h3>Knot Doe</h3>
                                 </a>
                                 <span>{{ trans('text.team_tit4') }}</span>
@@ -645,7 +645,7 @@
     <!-- Testimonial Area End -->
 
     <!-- Blog Area -->
-    <div class="blog-area pb-70">
+    <div class="blog-area  pb-70">
         <div class="container">
             <div class="section-title text-center">
                 <span>{{ trans('text.news') }}</span>
@@ -655,9 +655,9 @@
 
                 </p>
             </div>
-            <div class="row pt-45">
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
+            <div class="row  pt-45">
+            <div class="service-slider owl-carousel owl-theme">
+                <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="assets/img/blog/news3.webp" alt="Blog Images">
@@ -673,10 +673,7 @@
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-card">
+                <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="assets/img/blog/news2.jpg" alt="Blog Images">
@@ -692,10 +689,8 @@
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                    <div class="blog-card">
+                <div class="blog-card">
                         <div class="blog-img">
                             <a href="blog-details.html">
                                 <img src="assets/img/blog/news1.jpeg" alt="Blog Images">
@@ -711,7 +706,8 @@
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
                     </div>
-                </div>
+            </div>
+                
             </div>
         </div>
     </div>

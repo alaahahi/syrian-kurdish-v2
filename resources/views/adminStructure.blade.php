@@ -37,11 +37,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/1.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>John Doe</h3>
                                     </a>
                                     <span>Head of Bonsa</span>
@@ -72,11 +72,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/2.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>John Smith</h3>
                                     </a>
                                     <span>SEO Expert</span>
@@ -107,11 +107,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/3.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Evanaa</h3>
                                     </a>
                                     <span>Content Writer</span>
@@ -142,11 +142,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/4.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Knot Doe</h3>
                                     </a>
                                     <span>Marketing Expert</span>
@@ -177,11 +177,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/5.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Sarah Swift</h3>
                                     </a>
                                     <span>Executive</span>
@@ -212,11 +212,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/6.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Alita Scot</h3>
                                     </a>
                                     <span>Programmer</span>
@@ -247,11 +247,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/7.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Denial James </h3>
                                     </a>
                                     <span>CEO</span>
@@ -282,11 +282,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="member-card">
                             <div class="member-img">
-                                <a href="members.html">
+                                <a href="#">
                                     <img src="assets/img/member/8.jpg" alt="Member Images">
                                 </a>
                                 <div class="member-content">
-                                    <a href="members.html">
+                                    <a href="#">
                                         <h3>Sarah James </h3>
                                     </a>
                                     <span>Web Developer</span>
