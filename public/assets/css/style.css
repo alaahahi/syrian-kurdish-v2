@@ -9,7 +9,7 @@ This files table contents are outlined below>>>>>
 
 *******************************************
 *******************************************
-** - Default Btn Style 
+** - Default Btn Style
 ** - Section Title Style
 ** - Home Page One Style
 ** - Navbar Area Style
@@ -172,7 +172,7 @@ img {
 }
 
 /*================================
-Default Btn Style 
+Default Btn Style
 ===================================*/
 .default-btn {
     background-color: #4356d6;
@@ -243,7 +243,7 @@ Default Btn Style
 Default Btn Style End
 ===================================*/
 /*================================
-Section Title Style 
+Section Title Style
 ===================================*/
 .section-title span {
     color: #ff4a35;
@@ -271,7 +271,7 @@ Section Title Style End
 Default CSS End
 ==================================*/
 /*================================
-Home Page One Style 
+Home Page One Style
 ==================================*/
 /*=================================
 Navbar Area
@@ -420,7 +420,7 @@ Navbar Area
     -webkit-transition: 0.7s;
     transition: 0.7s;
     font-weight: 400;
-    
+
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
@@ -776,7 +776,7 @@ Main Banner Style
 Main Banner Style End
 ===================================*/
 /*=================================
-Brand Area 
+Brand Area
 ====================================*/
 .brand-area {
     position: relative;
@@ -821,7 +821,7 @@ Brand Area
 Brand Area End
 ====================================*/
 /*=================================
-About Area 
+About Area
 ====================================*/
 .about-area {
     position: relative;
@@ -1077,7 +1077,7 @@ Service Area
 Service Area End
 ====================================*/
 /*=================================
-Faq Area 
+Faq Area
 ====================================*/
 .faq-area {
     background-color: #fcfcff;
@@ -1107,7 +1107,7 @@ Faq Area
     position: relative;
     z-index: 10;
     height: auto;
-    
+
 }
 
 .faq-bg::before {
@@ -1320,12 +1320,12 @@ Faq Area
 Faq Area End
 ====================================*/
 /*=================================
-Portfolio Area 
+Portfolio Area
 ====================================*/
 .portfolio-area {
     position: relative;
   }
-  
+
   .portfolio-area .owl-nav .owl-prev {
     position: absolute;
     margin-top: 0;
@@ -1345,12 +1345,12 @@ Portfolio Area
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  
+
   .portfolio-area .owl-nav .owl-prev:hover {
     background-color: #fff !important;
     color: #4356d6 !important;
   }
-  
+
   .portfolio-area .owl-nav .owl-next {
     position: absolute;
     margin-top: 0;
@@ -1370,35 +1370,35 @@ Portfolio Area
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  
+
   .portfolio-area .owl-nav .owl-next:hover {
     background-color: #fff;
     color: #4356d6;
   }
-  
+
   .portfolio-item {
     margin-bottom: 30px;
   }
-  
+
   .portfolio-item .portfolio-img {
     position: relative;
   }
-  
+
   .portfolio-item .portfolio-img a {
     display: block;
   }
-  
+
   .portfolio-item .portfolio-img a img {
     border-radius: 10px;
     min-height: 300px;
   }
-  
+
   .portfolio-item .portfolio-tag {
     position: absolute;
     bottom: 105px;
     left: 25px;
   }
-  
+
   .portfolio-item .portfolio-tag a span {
     color: #fff;
     background-color: #ff4a35;
@@ -1406,7 +1406,7 @@ Portfolio Area
     border-radius: 50px;
     font-size: 13px;
   }
-  
+
   .portfolio-item .portfolio-content {
     position: absolute;
     bottom: 25px;
@@ -1419,27 +1419,27 @@ Portfolio Area
     transition: 0.7s;
     text-align:center
   }
-  
+
   .portfolio-item .portfolio-content:hover {
     background-color: #4356d6;
   }
-  
+
   .portfolio-item .portfolio-content:hover h3 {
     color: #fff;
   }
-  
+
   .portfolio-item .portfolio-content:hover i {
     background-color: #fff;
     color: #4356d6;
   }
-  
+
   .portfolio-item .portfolio-content a h3 {
     font-size: 16px;
     color: #070f4d;
     display: inline-block;
     margin-top: 6px;
   }
-  
+
   .portfolio-item .portfolio-content i {
     width: 35px;
     height: 35px;
@@ -1453,17 +1453,17 @@ Portfolio Area
     position: absolute;
     right: 15px;
   }
-  
+
   .portfolio-mt {
     margin-top: 100px;
   }
-  
+
 
 /*=================================
 Portfolio Area End
 ====================================*/
 /*=================================
-Submission Area 
+Submission Area
 ====================================*/
 .submission-area {
     background-color: #ff4a35;
@@ -1564,7 +1564,7 @@ Submission Area
 Submission Area End
 ====================================*/
 /*=================================
-Price Section 
+Price Section
 ====================================*/
 .bg-price {
     background-color: #fcfcff;
@@ -1734,7 +1734,7 @@ Price Section
 Price Section End
 ====================================*/
 /*=================================
-Member Area 
+Member Area
 ====================================*/
 .member-area {
     position: relative;
@@ -1870,7 +1870,7 @@ Member Area
 Member Area End
 ====================================*/
 /*=================================
-Counter Area 
+Counter Area
 ====================================*/
 .counter-area {
     background-color: #ff4a35;
@@ -2088,7 +2088,7 @@ Testimonial Area
 Testimonial Area End
 ====================================*/
 /*=================================
-Blog Card 
+Blog Card
 ====================================*/
 .blog-card {
     margin-bottom: 30px;
@@ -2157,13 +2157,13 @@ Blog Card
 .blog-card .blog-content a h3 {
     font-size: 20px;
     display: -webkit-box;
-    -webkit-line-clamp: 2; 
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis; 
-    line-height: 1.5em; 
-    max-height: 4.5em; 
-    word-break: break-word; 
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    max-height: 4.5em;
+    word-break: break-word;
 }
 
 
@@ -2180,7 +2180,7 @@ Blog Card
 Blog Card End
 ====================================*/
 /*=================================
-Footer Section 
+Footer Section
 ====================================*/
 .bg-footer {
     margin-top: 20px;
@@ -2376,10 +2376,10 @@ Footer Section End
 Home Page One Style  End
 ==================================*/
 /*================================
-Home Page two Style  
+Home Page two Style
 ==================================*/
 /*================================
-Header Area 
+Header Area
 ==================================*/
 .header-area {
     background-color: #4356d6;
@@ -2457,7 +2457,7 @@ Header Area End
 }
 
 /*================================
-Banner Area 
+Banner Area
 ==================================*/
 .banner-area {
     position: relative;
@@ -2744,7 +2744,7 @@ Client Area
 Client Area End
 ==================================*/
 /*================================
-Subscribe Area 
+Subscribe Area
 ==================================*/
 .subscribe-area {
     margin-top: 25px;
@@ -2971,7 +2971,7 @@ Footer Area Another End
 Home Page Two Style End
 ==================================*/
 /*================================
-Home Page Three Style 
+Home Page Three Style
 ==================================*/
 /* Other Side */
 .other-side .search-area {
@@ -3697,7 +3697,7 @@ Common Catagory
 }
 
 .common-catagory .catagory li {
-    display: block;
+    /* display: block; */
     background-color: #fff;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -3748,28 +3748,41 @@ Common Catagory
     top: 4px;
 }
 .accordion-content ol {
-    list-style-type:square;  /* عرض التعداد الرقمي */
-    list-style-position: inside; /* ضمان ظهور الأرقام داخل النص */
-    padding-left: 20px; /* مسافة من الحافة اليسرى */
-    margin: 10px 0; /* مسافة علوية وسفلية */
+    list-style-type:square;
+    list-style-position: inside;
+    padding-left: 20px;
+    margin: 10px 0;
 }
 
-/* ضبط عناصر <li> داخل <ol> */
+
 .accordion-content ol li {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     max-width: 100%;
     padding: 5px 0;
-    color: #070f4d; /* لون النص */
+    color: #070f4d;
     font-size: 16px;
     padding:10px
 }
 .accordion-content ol li::before {
-    content: none !important; /* إزالة أي تأثير سابق */
+    content: none !important;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block; 
 }
 
 
+.accordion-content p {
+    line-height: 1.8;
+    padding:14px
+}
 /*================================
 Common Catagory End
 ==================================*/
@@ -4352,7 +4365,7 @@ Blog Details Page
 Blog Details Page End
 ==================================*/
 /*================================
-Contact Page 
+Contact Page
 ==================================*/
 .contact-width {
     width: 960px;
@@ -4642,7 +4655,7 @@ Single Content CSS End
 404 Error page End
 ===================================*/
 /*==================================
-Back To Top Button 
+Back To Top Button
 =====================================*/
 #toTop {
     position: fixed;
@@ -4679,7 +4692,7 @@ Back To Top Button
 }
 
 /*==============================
-Back To Top Button 
+Back To Top Button
 =================================*/
 /*=================================
  Preloader
