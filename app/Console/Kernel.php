@@ -44,7 +44,7 @@ class Kernel extends ConsoleKernel
                     foreach ($event as $string) {
                         $arrayEvent = explode(',', $string);
                     }
-                    //$brand_ids= Event::whereIn('id',$arrayEvent)->pluck('brand_id')->toArray();
+                    //$brand_ids= Post::whereIn('id',$arrayEvent)->pluck('brand_id')->toArray();
     
                     //$user_ids= Brand::whereIn('id',  $brand_ids )->pluck('user_id');
                  

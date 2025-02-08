@@ -94,26 +94,12 @@ return [
     | multilingual and what locales are enabled.
     |
     */
-
     'multilingual' => [
-        /*
-         * Set whether or not the multilingual is supported by the BREAD input.
-         */
-        'enabled' => false,
-
-        /*
-         * Select default language
-         */
-        'default' => 'en',
-
-        /*
-         * Select languages that are supported.
-         */
-        'locales' => [
-            'en',
-            //'pt',
-        ],
+        'enabled' => true, // تفعيل دعم الترجمة
+        'default' => 'en', // اللغة الافتراضية
+        'locales' => ['en', 'ar', 'ku', 'de'], // اللغات المدعومة
     ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +136,7 @@ return [
             'App\\Widgets\\BrandDimmer',
             'App\\Widgets\\AcceptedBrandsDimmer',
             'App\\Widgets\\UnacceptedBrandsDimmer',
-            'App\\Widgets\\EventDimmer',
+            'App\\Widgets\\PostDimmer',
             'App\\Widgets\\AcceptedEventsDimmer',
             'App\\Widgets\\UnacceptedEventsDimmer',
             'App\\Widgets\\TodayEventsDimmer',

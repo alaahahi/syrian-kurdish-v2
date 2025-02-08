@@ -97,12 +97,12 @@ class User extends \TCG\Voyager\Models\User implements JWTSubject
     }
     public function events()
     {
-        return $this->hasMany(Event::class)->orderBy('id', 'desc');
+        return $this->hasMany(Post::class)->orderBy('id', 'desc');
     }
 
     public function wishlists()
     {
-        return $this->belongsToMany(Event::class, 'wishlists');
+        return $this->belongsToMany(Post::class, 'wishlists');
     }
 
     public function wishlists_brands()

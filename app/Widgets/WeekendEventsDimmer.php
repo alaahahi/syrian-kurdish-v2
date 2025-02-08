@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
-use App\Models\Event;
 use Carbon\Carbon;
+use App\Models\Post;
 
 class WeekendEventsDimmer extends BaseDimmer
 {
@@ -26,8 +26,7 @@ class WeekendEventsDimmer extends BaseDimmer
     {
 
         $dt = Carbon::now();
-        $count = Event::whereDate('start',$dt->next('Friday')->format('Y-m-d'))
-        ->accepted()->count();
+        $count = Post::count();
         $string = trans_choice('Weekend Events', $count);
 
         return view('voyager::dimmer', array_merge($this->config, [

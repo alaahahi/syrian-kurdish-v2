@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 use App\Models\User;
 use App\Models\Brand;
-use App\Models\Event;
+use App\Models\Post;
 use App\Models\Wallet;
 use App\Models\Notifications;
 use Illuminate\Support\Str;
@@ -201,7 +201,7 @@ class AuthRepository
     public function addWishlistsEvent($id)
     {
         try {
-            $event = Event::find($id);
+            $event = Post::find($id);
             $event->increment('likes');
             $this->user->wishlists()->attach($id);
             return 'Ok';
@@ -213,7 +213,7 @@ class AuthRepository
     public function removeWishlistsEvent($id)
     {
         try {
-            $event = Event::find($id);
+            $event = Post::find($id);
             $event->decrement('likes');
          
             $this->user->wishlists()->detach($id);

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
-use App\Models\Event;
+use App\Models\Post;
 use Carbon\Carbon;
 
 class TomorrowEventsDimmer extends BaseDimmer
@@ -24,9 +24,7 @@ class TomorrowEventsDimmer extends BaseDimmer
      */
     public function run()
     {
-        $count = Event::whereDate('start',Carbon::Tomorrow()->toDateString())
-        ->accepted()
-        ->count();
+        $count = Post::count();
         $string = trans_choice('Tomorrow Events', $count);
 
         return view('voyager::dimmer', array_merge($this->config, [

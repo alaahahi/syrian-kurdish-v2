@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
-use App\Models\Event;
+use App\Models\Post;
 
-class EventDimmer extends BaseDimmer
+class PostDimmer extends BaseDimmer
 {
     /**
      * The configuration array.
@@ -23,8 +23,8 @@ class EventDimmer extends BaseDimmer
      */
     public function run()
     {
-        $count = Event::count();
-        $string = trans_choice('Event', $count);
+        $count = Post::count();
+        $string = trans_choice('Post', $count);
 
         return view('voyager::dimmer', array_merge($this->config, [
             'icon'   => 'voyager-params',

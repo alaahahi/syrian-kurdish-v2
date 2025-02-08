@@ -9,7 +9,7 @@ use App\Models\User;
 use App\Models\Session;
 use App\Traits\ResponseTrait;
 use App\Models\Brand;
-use App\Models\Event;
+use App\Models\Post;
 class AdminController extends Controller
 {
     use ResponseTrait;

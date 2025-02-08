@@ -8,7 +8,7 @@ use App\Interfaces\CrudInterface;
 use App\Models\Tag;
 use App\Models\Brand;
 use App\Models\User;
-use App\Models\Event;
+use App\Models\Post;
 use App\Models\Info;
 use App\Models\Category;
 use Illuminate\Contracts\Pagination\Paginator;
@@ -149,7 +149,7 @@ class DashboardRepository implements CrudInterface
     }
     public function events()
     {
-        return Event::all();
+        return Post::all();
     }
     
     public function tags()

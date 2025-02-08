@@ -8,17 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-    protected $table = 'category';
 
-    /**
-     * Override fillable property data.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name',
-        'order_on',
-        'status'
+    protected $fillable = ['name'];
+
+    protected $casts = [
+        'name' => 'array', // تحويل الحقل إلى JSON تلقائيًا
     ];
 
 }

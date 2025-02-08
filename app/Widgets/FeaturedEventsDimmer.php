@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
-use App\Models\Event;
+use App\Models\Post;
 
 class FeaturedEventsDimmer extends BaseDimmer
 {
@@ -23,7 +23,7 @@ class FeaturedEventsDimmer extends BaseDimmer
      */
     public function run()
     {
-        $count = Event::where('featured','1')->count();
+        $count = Post::where('status','1')->count();
         $string = trans_choice('Featured Events', $count);
 
         return view('voyager::dimmer', array_merge($this->config, [

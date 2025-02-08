@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Event;
+use App\Models\Post;
 use App\Models\Brand;
 use App\Models\Ticket;
 use App\Models\Notifications;
@@ -24,7 +24,7 @@ class NotificationController extends Controller
     public function index()
     {
         $options = User::paginate(1000);
-        $event = Event::paginate(1000);
+        $event = Post::paginate(1000);
         return view('admin/notification',compact('options','event'));
     } 
 
@@ -71,7 +71,7 @@ class NotificationController extends Controller
                         return response()->json('User Dont have token fcm');
                     }
             case isset($request->event_id):
-                    //$event = Event::find($request->event_id);
+                    //$event = Post::find($request->event_id);
                     //$brand = Brand::find($event->brand_id );
                     //$userBrand = User::find($brand->user_id);
                     

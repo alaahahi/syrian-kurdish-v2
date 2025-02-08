@@ -5,7 +5,7 @@ namespace App\Repositories;
 use Illuminate\Support\Str;
 use App\Helpers\UploadHelper;
 use App\Interfaces\CrudInterface;
-use App\Models\Event;
+use App\Models\Post;
 use App\Models\Brand;
 use App\Models\Ticket;
 use App\Models\User;
@@ -46,7 +46,7 @@ class EventRepository implements CrudInterface
      */
     public function getAll(): Paginator
     {
-        return Event::orderBy('id', 'desc')
+        return Post::orderBy('id', 'desc')
             ->with('brand')
             ->with('tags')
             ->paginate(10);
@@ -59,7 +59,7 @@ class EventRepository implements CrudInterface
 
         $brand= Brand::where('user_id', $this->user->id)->pluck('id');
 
-        return Event::orderBy('id', 'desc')
+        return Post::orderBy('id', 'desc')
             ->whereIn('brand_id',$brand)
             ->with('tags')
             ->with('brand')
@@ -77,7 +77,7 @@ class EventRepository implements CrudInterface
     {
 
         $userId = $this->user->id;
-        $expiredEventIds = Event::where('end', '<', Carbon::now())
+        $expiredEventIds = Post::where('end', '<', Carbon::now())
         ->pluck('id');
     
         // Update all tickets for the user where the 'end' time has passed and event_id is within $expiredEventIds
@@ -102,7 +102,7 @@ class EventRepository implements CrudInterface
 
     public function eventFeatured()
     {
-        return Event::where('featured',1)
+        return Post::where('featured',1)
             ->with('tags')
             ->with('brand')
             ->accepted()
@@ -112,30 +112,27 @@ class EventRepository implements CrudInterface
 
     public function eventToday()
     {
-        return Event::whereDate('start',Carbon::today()->toDateString())
+        return Post::whereDate('start',Carbon::today()->toDateString())
             ->with('brand')
             ->with('tags')
-            ->accepted()
             ->get();
 
             
     }
     public function eventTomorrow()
     {
-        return Event::whereDate('start',Carbon::Tomorrow()->toDateString())
+        return Post::whereDate('start',Carbon::Tomorrow()->toDateString())
         ->with('brand')
         ->with('tags')
-        ->accepted()
         ->get();
     }
     public function eventWeekend()
     {
         $dt = Carbon::now();
-        return Event::whereDate('start',$dt->next('Friday')->format('Y-m-d'))
+        return Post::whereDate('start',$dt->next('Friday')->format('Y-m-d'))
         ->orWhereDate('start', $dt->next('Saturday')->format('Y-m-d'))
         ->with('brand')
         ->with('tags')
-        ->accepted()
         ->get();
     }
     /**
@@ -147,7 +144,7 @@ class EventRepository implements CrudInterface
     public function getPaginatedData($perPage): Paginator
     {
         $perPage = isset($perPage) ? intval($perPage) : 12;
-        return Event::orderBy('id', 'desc')
+        return Post::orderBy('id', 'desc')
             ->with('brand')
             ->with('tags')
             ->with('user')
@@ -165,7 +162,7 @@ class EventRepository implements CrudInterface
     {
         $perPage = isset($perPage) ? intval($perPage) : 10;
 
-        $query = Event::query()->with('tags')->accepted();;
+        $query = Post::query()->with('tags')->accepted();;
 
         // Filter by name
         if ($keyword) {
@@ -224,7 +221,7 @@ class EventRepository implements CrudInterface
         }
 
 
-        $event = Event::create($data);
+        $event = Post::create($data);
         try {
             $event->tags()->attach(json_decode($data['tags'],true));
 
@@ -241,7 +238,7 @@ class EventRepository implements CrudInterface
         if (!empty($data['image'])) {
             $data['image'] = UploadHelper::upload('image', $data['image'], $titleShort . '-' . time(), 'storage');
         }
-        $event = Event::create($data);
+        $event = Post::create($data);
         try {
             $event->tags()->attach(json_decode($data['tags'],true));
         } catch (\Throwable $th) {
@@ -260,7 +257,7 @@ class EventRepository implements CrudInterface
      */
     public function delete(int $id): bool
     {
-        $event = Event::find($id);
+        $event = Post::find($id);
         if (empty($event)) {
             return false;
         }
@@ -278,7 +275,7 @@ class EventRepository implements CrudInterface
      */
     public function getByID(int $id): Event|null
     {
-        $event = Event::with('tags')->with('brand')->find($id);
+        $event = Post::with('tags')->with('brand')->find($id);
 
         if($event){
 
@@ -321,7 +318,7 @@ class EventRepository implements CrudInterface
      */
     public function update(int $id, array $data): Event|null
     {
-        $event = Event::find($id);
+        $event = Post::find($id);
         if (!empty($data['image'])) {
             $titleShort = Str::slug(substr($data['title'], 0, 20));
             $data['image'] = UploadHelper::update('image', $data['image'], $titleShort . '-' . time(), 'images/events', $event->image);
@@ -355,7 +352,7 @@ class EventRepository implements CrudInterface
     public function bookingEvent(array $data): Event|null|string
     {
         $data['ticket_number']=1;
-        $event = Event::find($data['event_id']);
+        $event = Post::find($data['event_id']);
         if (is_null($event)) {
             return null;
         }
@@ -406,7 +403,7 @@ class EventRepository implements CrudInterface
         if($ticket){
             $ticket->update(['status'=>'rejected']);
             try {
-                $event = Event::find($ticket->event_id);
+                $event = Post::find($ticket->event_id);
                 $event->increment('ticket',1);
             } catch (\Throwable $th) {
                 //throw $th;
