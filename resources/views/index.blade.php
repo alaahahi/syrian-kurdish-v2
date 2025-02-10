@@ -645,6 +645,7 @@
     <!-- Testimonial Area End -->
 
     <!-- Blog Area -->
+  
     <div class="blog-area  pb-70">
         <div class="container">
             <div class="section-title text-center">
@@ -657,6 +658,32 @@
             </div>
             <div class="row  pt-45">
             <div class="service-slider owl-carousel owl-theme">
+                @foreach ($posts as $post)
+                @php
+                $translation = $post->translations->where('locale', app()->getLocale())->first();
+                $translatedTitle = $translation ? $translation->value : $post->title;
+                @endphp
+    
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <a href="post/{{$post->slug }}">
+                            <img src="/storage/{{$post->image }}" alt="Blog Images">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">
+                            <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
+                        </div>
+                        <a href="post/{{$post->slug }}">
+                            <h3>{{ $translatedTitle }}</h3>
+                        </a>
+                        <a href="post/{{$post->slug }}" class="read-btn">{{ trans('text.read_more') }}</a>
+                    </div>
+                </div>
+            
+            
+                    <!-- يمكنك إضافة المزيد من الحقول القابلة للترجمة هنا -->
+                @endforeach
                 <div class="blog-card">
                         <div class="blog-img">
                             <a href="{{ route('news.details') }}">
@@ -672,7 +699,7 @@
                             </a>
                             <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
                         </div>
-                    </div>
+                </div>
                 <div class="blog-card">
                         <div class="blog-img">
                             <a href="{{ route('news.details') }}">
