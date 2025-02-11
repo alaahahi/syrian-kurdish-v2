@@ -28,16 +28,18 @@
                         <div class="contact-card">
                             <i class='flaticon-call'></i>
                             <ul>
-                                <li>
-                                    <a href="tel:+1123456789">
-                                        +1  1234 56 789
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+19876543210">
-                                        +1  9876 543 210
-                                    </a>
-                                </li>
+                                    @if(setting('site.primary_phone') ?? '')
+                                    <li style="direction: ltr">
+                                        <a href="tel:{{setting('site.primary_phone')}}">{{setting('site.primary_phone')}}</a>
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </li>
+                                    @endif
+                                    @if(setting('site.second_phone') ?? '')
+                                    <li style="direction: ltr">
+                                        <a href="tel:{{setting('site.second_phone')}}">{{setting('site.second_phone')}}</a>
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </li>
+                                    @endif
                             </ul>
                         </div>
                     </div>
@@ -46,12 +48,12 @@
                         <div class="contact-card">
                             <i class="flaticon-paper-plane"></i>
                             <ul>
+                                @if(setting('site.primary_email') ?? '')
                                 <li>
-                                    <a href="mailto:info@bonsa.com">info@bonsa.com</a>
+                                    <i class='bx bxs-chevron-right'></i>
+                                    <a href="mailto:{{setting('site.primary_email')}}">{{setting('site.primary_email')}}</a>
                                 </li>
-                                <li>
-                                    <a href="mailto:hello@bonsa.com" >hello@bonsa.com</a>
-                                </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -61,10 +63,7 @@
                             <i class='flaticon-pin'></i>
                             <ul>
                                 <li>
-                                    28/A Street, New York, USA
-                                </li>
-                                <li>
-                                    48/C Street, New York, USA
+                                  سوريا - القامشلي
                                 </li>
                             </ul>
                         </div>
