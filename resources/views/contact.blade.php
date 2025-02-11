@@ -31,13 +31,11 @@
                                     @if(setting('site.primary_phone') ?? '')
                                     <li style="direction: ltr">
                                         <a href="tel:{{setting('site.primary_phone')}}">{{setting('site.primary_phone')}}</a>
-                                        <i class='bx bxs-chevron-right'></i>
                                     </li>
                                     @endif
                                     @if(setting('site.second_phone') ?? '')
                                     <li style="direction: ltr">
                                         <a href="tel:{{setting('site.second_phone')}}">{{setting('site.second_phone')}}</a>
-                                        <i class='bx bxs-chevron-right'></i>
                                     </li>
                                     @endif
                             </ul>
@@ -50,7 +48,6 @@
                             <ul>
                                 @if(setting('site.primary_email') ?? '')
                                 <li>
-                                    <i class='bx bxs-chevron-right'></i>
                                     <a href="mailto:{{setting('site.primary_email')}}">{{setting('site.primary_email')}}</a>
                                 </li>
                                 @endif
