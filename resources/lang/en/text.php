@@ -435,7 +435,20 @@ Syrian journalists who have left the profession after working in it for no less 
 'submission_date' => 'Submission Date',
 'submit_request' => 'Submit Request',
 'agreement_text' => 'I pledge to abide by the network’s charter and the code of journalistic ethics.',
-'blogs'=>'blogs'
+'blogs'=>'blogs',
+'share'=> 'Share',
+'search_now' => 'Search Now',
+'search_for' => 'Search for:',
+'search' => 'Search',
+'popular_posts' => 'Popular Posts',
+'seo_guide' => 'Basic Guideline Layout for SEO Beginner Level',
+'archives' => 'Archives',
+'categories' => 'Categories',
+'data_analysis' => 'Data Analysis',
+'data_research' => 'Data Research',
+'tags' => 'Tags',
+'seo' => 'SEO',
+'marketing' => 'Marketing',
 
 
 

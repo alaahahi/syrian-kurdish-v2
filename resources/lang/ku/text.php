@@ -239,6 +239,18 @@ Bi xêr hatin cîhana nûçeyan ji çavkaniyek din, ku bingehê xebata me çavka
     "commitment" => "Şerîkî",
     "agreement_label" => "Ez peyman dibim ku bi sêyaseyên torê û peymana şerefê ya rojnamevanî hewl bidim.",
     "submit_request" => "Daxwazê Bişîne",
-
+    "share"=> "Share",
+    'search_now' => 'Lêgerîn',
+    'search_for' => 'Lêgerîn bo:',
+    'search' => 'Lêgerîn',
+    'popular_posts' => 'Nivîsarên Nşîn',
+    'seo_guide' => 'Rêbernameya Bingehîn a SEO ji bo Destnîşan',
+    'archives' => 'Arşîv',
+    'categories' => 'Kategorî',
+    'data_analysis' => 'Analîza Daneyan',
+    'data_research' => 'Lêkolîna Daneyan',
+    'tags' => 'Etîket',
+    'seo' => 'SEO',
+    'marketing' => 'Bazirgani',
 
 ];

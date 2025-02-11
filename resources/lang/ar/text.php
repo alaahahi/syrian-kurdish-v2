@@ -442,7 +442,20 @@ return [
         ""=>"",
         "proficiency_level"=> "مستوى الإتقان",
         "certificates"=> "الشهادات",
-        "blogs"=>"المدونات"
+        "blogs"=>"المدونات",
+        'share'=> 'مشاركة',
+        'search_now' => 'ابحث الآن',
+        'search_for' => 'ابحث عن:',
+        'search' => 'بحث',
+        'popular_posts' => 'المقالات الشائعة',
+        'seo_guide' => 'الدليل الأساسي لتحسين محركات البحث للمبتدئين',
+        'archives' => 'الأرشيف',
+        'categories' => 'الفئات',
+        'data_analysis' => 'تحليل البيانات',
+        'data_research' => 'بحث البيانات',
+        'tags' => 'الوسوم',
+        'seo' => 'تحسين محركات البحث',
+        'marketing' => 'التسويق',
     ];
     
 
