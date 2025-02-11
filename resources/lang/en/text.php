@@ -435,7 +435,7 @@ Syrian journalists who have left the profession after working in it for no less 
 'submission_date' => 'Submission Date',
 'submit_request' => 'Submit Request',
 'agreement_text' => 'I pledge to abide by the network’s charter and the code of journalistic ethics.',
-
+'blogs'=>'blogs'
 
 
 

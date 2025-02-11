@@ -56,6 +56,10 @@ Route::get('/contact', [MainController::class, 'contact']);
 Route::get('notification', [NotificationController::class, 'index']);
 Route::post('sendNotification', [NotificationController::class, 'sendNotification'])->name('sendNotification');
 
+Route::get('/blogs/{slug}/', [MainController::class, 'blogShow']);
+Route::get('/المدونات/{slug}/', [MainController::class, 'blogShow']);
+
+
 
 Route::post('/store-token', [NotificationController::class, 'storeToken'])->name('store.token');
 Route::get('/admin-structure', function () {

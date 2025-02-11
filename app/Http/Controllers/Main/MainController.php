@@ -65,5 +65,18 @@ class MainController extends Controller
         //return $this->responseSuccess($session, 'Event List Fetched Successfully !');
         return view('dashboard',compact('user','session'));
     }
+
+    public function blogShow($slug)
+    {   
+        $post = Post::whereHas('translations', function ($query) use ($slug) {
+            $query->where('column_name', 'slug')
+                  ->where('value', $slug)
+                  ->where('locale', app()->getLocale());
+        })->with('translations')->first();
+
+        $posts = Post::with('translations')->get();
+        return view('news_details', compact('posts','post'));
+    }
+
     
 }

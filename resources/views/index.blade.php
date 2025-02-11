@@ -22,11 +22,11 @@
 
                 <div class="col-lg-6">
                     <div class="banner-img">
-                        <img src="assets/img/home1.png" alt="Banner Images">
+                        <img src="{{ asset('assets/img/home1.png') }}" alt="Banner Images">
                     </div>
                 </div>
                 <div class="banner-shape-1">
-                    <img src="assets/img/shape/home1.png" alt="Banner Shape">
+                    <img src="{{ asset('assets/img/shape/home1.png') }}" alt="Banner Shape">
                 </div>
             </div>
         </div>
@@ -660,30 +660,35 @@
             <div class="service-slider owl-carousel owl-theme">
                 @foreach ($posts as $post)
                 @php
-                $translation = $post->translations->where('locale', app()->getLocale())->first();
-                $translatedTitle = $translation ? $translation->value : $post->title;
+                    $translationTitle = $post->translations->where('column_name', 'title')
+                                      ->where('locale', app()->getLocale())->first();
+                    $translationSlug = $post->translations->where('column_name', 'slug')
+                                      ->where('locale', app()->getLocale())->first();
+            
+                    $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
+                    $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
                 @endphp
-    
+            
                 <div class="blog-card">
                     <div class="blog-img">
-                        <a href="post/{{$post->slug }}">
-                            <img src="/storage/{{$post->image }}" alt="Blog Images">
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
+                            <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
                         </a>
                     </div>
                     <div class="blog-content">
                         <div class="blog-tag">
                             <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
                         </div>
-                        <a href="post/{{$post->slug }}">
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
                             <h3>{{ $translatedTitle }}</h3>
                         </a>
-                        <a href="post/{{$post->slug }}" class="read-btn">{{ trans('text.read_more') }}</a>
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/" class="read-btn">
+                            {{ trans('text.read_more') }}
+                        </a>
                     </div>
                 </div>
-            
-            
-                    <!-- يمكنك إضافة المزيد من الحقول القابلة للترجمة هنا -->
                 @endforeach
+            
                 <div class="blog-card">
                         <div class="blog-img">
                             <a href="{{ route('news.details') }}">

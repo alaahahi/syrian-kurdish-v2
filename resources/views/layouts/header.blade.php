@@ -11,42 +11,44 @@ dir="rtl"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @if ($select_lang == 'ar')
-        <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.rtl.min.css') }}">
     @else
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     @endif
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
+<!-- Animate Min CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+<!-- Boxicons CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/boxicons.min.css') }}">
+<!-- Flaticon CSS -->
+<link rel="stylesheet" href="{{ asset('assets/fonts/flaticon.css') }}">
+<!-- Meanmenu CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
+<!-- Style CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+<!-- Theme Dark CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/theme-dark.css') }}">
 
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- Boxicons CSS -->
-    <link rel="stylesheet" href="assets/css/boxicons.min.css">
-    <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="assets/fonts/flaticon.css">
-    <!-- Meanmenu CSS -->
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- Theme Dark CSS -->
-    <link rel="stylesheet" href="assets/css/theme-dark.css">
-    @if ($select_lang == 'ar')
-        <link rel="stylesheet" href="assets/css/rtl.css">
-    @endif
-    <!-- Title -->
-    <title>{{ trans('text.syrian_kurdish_journalists_network') }}</title>
+@if ($select_lang == 'ar')
+    <link rel="stylesheet" href="{{ asset('assets/css/rtl.css') }}">
+@endif
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<!-- Title -->
+<title>{{ trans('text.syrian_kurdish_journalists_network') }}</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ asset('site.webmanifest') }}">
+
 </head>
 
 <body>
@@ -60,8 +62,8 @@ dir="rtl"
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
             <a href="/" class="logo">
-                <img src="assets/img/logo.png" class="logo-one" alt="Logo">
-                <img src="assets/img/sticky-logo.png" class="logo-two" alt="Logo">
+                <img src="{{ asset('assets/img/logo.png') }}" class="logo-one" alt="Logo">
+                <img src="{{ asset('assets/img/sticky-logo.png') }}" class="logo-two" alt="Logo">
             </a>
         </div>
 
@@ -70,10 +72,10 @@ dir="rtl"
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
                     <a class="navbar-brand" href="/">
-                        <img src="assets/img/logo.png" alt="Logo">
+                        <img src="{{ asset('assets/img/logo.png') }}" alt="Logo">
                     </a>
                     <a class="navbar-brand-sticky" href="/">
-                        <img src="assets/img/sticky-logo.png" alt="Logo">
+                        <img src="{{ asset('assets/img/sticky-logo.png') }}" alt="Logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

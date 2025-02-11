@@ -442,6 +442,7 @@ return [
         ""=>"",
         "proficiency_level"=> "مستوى الإتقان",
         "certificates"=> "الشهادات",
+        "blogs"=>"المدونات"
     ];
     
 

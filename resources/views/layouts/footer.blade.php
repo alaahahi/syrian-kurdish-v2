@@ -7,7 +7,7 @@
                     <div class="footer-single">
                         <div class="footer-single-content">
                             <a href="/">
-                                <img src="assets/img/sticky-logo.png" alt="Logo">
+                                <img src="{{ asset('assets/img/sticky-logo.png') }}" alt="Logo">
                             </a>
                             <p> {{ trans('text.about_title_1') }}</p>
                         </div>
@@ -137,25 +137,26 @@
 
 
 <!-- Jquery Min JS -->
-<script src="assets/js/jquery.min.js"></script>
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <!-- Bootstrap Bundle Min JS -->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 <!-- Meanmenu JS -->
-<script src="assets/js/meanmenu.min.js"></script>
+<script src="{{ asset('assets/js/meanmenu.min.js') }}"></script>
 <!-- Owl Carousel JS -->
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 <!-- Magnific Popup JS -->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
 <!-- Wow JS -->
-<script src="assets/js/wow.min.js"></script>
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
 <!-- Ajaxchimp Min JS -->
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="{{ asset('assets/js/jquery.ajaxchimp.min.js') }}"></script>
 <!-- Form Validator Min JS -->
-<script src="assets/js/form-validator.min.js"></script>
+<script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
 <!-- Contact Form JS -->
-<script src="assets/js/contact-form-script.js"></script>
+<script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
 <!-- Custom JS -->
-<script src="assets/js/custom.js"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
+
 </body>
 
 </html>

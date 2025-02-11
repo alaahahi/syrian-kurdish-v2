@@ -1,19 +1,29 @@
 @extends('layouts.content')
+@php
+    // البحث عن ترجمة العنوان والـ slug بلغة التطبيق الحالية
+    $locale = app()->getLocale();
+    $translations = $post->translations->whereIn('column_name', ['title', 'slug'])->where('locale', $locale);
 
+    // استخراج الترجمة إن وجدت
+    $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? $post->title;
+    $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
+    $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
+
+@endphp
 @section('content')
         <!-- Inner Banner -->
         <div class="inner-banner inner-bg5">
             <div class="container">
                 <div class="inner-title text-center">
-                    <h3>Blog Details</h3>
+                    <h3>{{$translatedTitle  ?? ''}}</h3>
                     <ul>
                         <li>
-                            <a href="/">Home</a>
+                            <a href="{{ route('home') }}">{{ trans('text.homepage') }}</a>
                         </li>
                         <li>
                             <i class='bx bxs-chevrons-right'></i>
                         </li>
-                        <li>Blog Details</li>
+                        <li>{{$translatedTitle ?? ''}}</li>
                     </ul>
                 </div>
             </div>
@@ -26,36 +36,11 @@
                     <div class="col-lg-8">
                         <div class="blog-dtls-content">
                             <div class="blog-dtls-img">
-                                <img src="assets/img/blog/blog-dtls.jpg" alt="Blog Images">
+                                <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
                             </div>
                             <div class="blog-text">
-                                <h2>Basic Guidline About Web Development</h2>
-                                <p>
-                                    There are many variations of passages of Lorem Ipsum available,
-                                    but the majority have suffered alteration in some form, 
-                                    by injected humour, or randomised words which don't look
-                                    even slightly believable. If you are going to use a passage 
-                                    of Lorem Ipsum, you need to be sure there isn't anything 
-                                    embarrassing hidden in the middle of text. All the Lorem Ipsum
-                                    generators on the Internet tend to repeat predefined chunks as necessary,
-                                    making this the first true generator on the Internet.
-                                </p>
-                                <p>
-                                    There are many variations of passages of Lorem Ipsum available, but the majority
-                                    have suffered alteration in some form, by injected humour, or randomised words which don't look
-                                </p>
-                                <blockquote class="boxicon-quote">
-									<p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid praesentium 
-                                        eveniet illum asperiores, quidem, ipsum voluptatum numquam ducimus nisi exercitationem 
-                                        dolorum facilis Repellendus aliquid praesentium eveniet illum asperiores.
-                                    </p>
-                                </blockquote>
-                                <p>
-                                    There are many variations of passages of Lorem Ipsum available, but the majority 
-                                    have suffered alteration in some form, by injected humour, or randomised words 
-                                    which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.
-                                </p>
+                                <h2>{{$translatedTitle  ?? ''}}</h2>
+                                {!! $translatedContent ?? '' !!}
                             </div>
                             <div class="row bolg-gallery">
                                 <div class="bolg-gallery-item">

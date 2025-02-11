@@ -17,7 +17,7 @@ class Post extends Model
     protected $casts = [
         'is_published' => 'boolean',
     ];
-    protected $translatable = ['title', 'content']; // أضف الحقول القابلة للترجمة
+    protected $translatable = ['title', 'content', 'slug']; // أضف الحقول القابلة للترجمة
 
    
 }
