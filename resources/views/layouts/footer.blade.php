@@ -94,18 +94,24 @@
                     <div class="footer-list ml-20">
                         <h3>{{ trans('text.Contact_Us') }}</h3>
                         <ul>
+                            @if(setting('site.primary_phone') ?? '')
+                            <li style="direction: ltr">
+                                <a href="tel:+1123456789">{{setting('site.primary_phone')}}</a>
+                                <i class='bx bxs-chevron-right'></i>
+                            </li>
+                            @endif
+                            @if(setting('site.second_phone') ?? '')
+                            <li style="direction: ltr">
+                                <a href="tel:+1123456789">{{setting('site.second_phone')}}</a>
+                                <i class='bx bxs-chevron-right'></i>
+                            </li>
+                            @endif
+                            @if(setting('site.primary_email') ?? '')
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="tel:+1123456789">+1 1234 56 789</a>
+                                <a href="mailto:info@bonsa.com">{{setting('site.primary_email')}}</a>
                             </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="tel:+19876543210">+1 9876 543 210</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="mailto:info@bonsa.com">info@gmail.com</a>
-                            </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
