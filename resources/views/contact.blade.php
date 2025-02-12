@@ -8,7 +8,7 @@
                     <h3>{{ trans('text.contact_us') }}</h3>
                     <ul>
                         <li>
-                           <a href="{{ route('home') }}">{{ trans('text.homepage') }}</a>
+                           <a href="{{ route('/') }}">{{ trans('text.homepage') }}</a>
                         </li>
                         <li>
                             <i class='bx bxs-chevrons-right'></i>
