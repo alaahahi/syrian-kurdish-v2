@@ -306,7 +306,7 @@ Welcome to the world of news from a different perspective, where credibility is 
 "live_streaming" => "Live Streaming Services",
 "exclusive_interviews" => "Exclusive Interviews with Decision Makers",
 "news" => "News",
-"press_freedoms" => "Press Freedoms",
+"press_freedoms_h" => "Press Freedoms",
 "administrative_structure" => "Administrative Structure",
 "membership" => "Membership",
 "forum_tit1" => "Discussion Forums",

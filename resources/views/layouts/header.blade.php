@@ -107,7 +107,7 @@ dir="rtl"
                             </li>
                              <li class="nav-item">
                                 <a href="{{ route('services') }}" class="nav-link">
-                                    {{ trans('text.press_freedoms') }}
+                                    {{ trans('text.press_freedoms_h') }}
                                 </a>
                             </li>
                             <li class="nav-item">
