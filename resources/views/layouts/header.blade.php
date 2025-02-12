@@ -42,12 +42,32 @@ dir="rtl"
 <!-- Title -->
 <title>{{ trans('text.syrian_kurdish_journalists_network') }}</title>
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/apple-touch-icon.png') }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicon-32x32.png') }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon-16x16.png') }}">
-<link rel="manifest" href="{{ asset('site.webmanifest') }}">
+
+   <meta name="description" content="{{ trans('text.site_description') }}">
+
+   <meta name="keywords" content="شبكة الصحفيين الكرد السوريين, أخبار, إعلام, صحافة, حرية التعبير">
+
+   <meta name="robots" content="index, follow">
+
+   <meta property="og:title" content="{{ trans('text.syrian_kurdish_journalists_network') }}">
+   <meta property="og:description" content="{{ trans('text.site_description') }}">
+   <meta property="og:image" content="{{ asset('images/logo.png') }}">
+   <meta property="og:url" content="{{ url()->current() }}">
+   <meta property="og:type" content="website">
+
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="{{ trans('text.syrian_kurdish_journalists_network') }}">
+   <meta name="twitter:description" content="{{ trans('text.site_description') }}">
+   <meta name="twitter:image" content="{{ asset('images/logo.png') }}">
+
+   <link rel="canonical" href="{{ url()->current() }}">
+
+ 
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
 </head>
 

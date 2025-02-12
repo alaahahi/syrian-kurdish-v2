@@ -449,6 +449,7 @@ Syrian journalists who have left the profession after working in it for no less 
 'tags' => 'Tags',
 'seo' => 'SEO',
 'marketing' => 'Marketing',
+'site_description' => 'An independent news platform dedicated to publishing accurate and unbiased reports on Kurdish and Syrian issues.',
 
 
 

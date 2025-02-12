@@ -252,5 +252,6 @@ Bi xêr hatin cîhana nûçeyan ji çavkaniyek din, ku bingehê xebata me çavka
     'tags' => 'Etîket',
     'seo' => 'SEO',
     'marketing' => 'Bazirgani',
+    'site_description' => 'Platformeke serbixwe ya nûçeyan ku derbarê mijarên Kurd û Sûrî bi rastî û bê tarafî daxwaz dike.',
 
 ];
