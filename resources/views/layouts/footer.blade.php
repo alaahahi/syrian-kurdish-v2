@@ -64,7 +64,7 @@
                         <ul>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('/') }}">{{ trans('text.Home') }}</a>
+                                <a href="/">{{ trans('text.Home') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>

@@ -101,7 +101,7 @@ dir="rtl"
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="{{ route('/') }}" class="nav-link active">
+                                <a href="/" class="nav-link active">
                                     {{ trans('text.News') }}
                                 </a>
                             </li>
