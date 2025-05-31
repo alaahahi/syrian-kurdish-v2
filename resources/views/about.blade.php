@@ -45,7 +45,7 @@
         </div>
         <!-- About Area End -->
 
-        <!-- Counter Area -->
+        <!-- Counter Area 
         <div class="counter-area pt-100 pb-70">
             <div class="container">
                 <div class="row">
@@ -83,61 +83,142 @@
                 </div>
             </div>
         </div>
-        <!-- Counter Area End -->
+        Counter Area End -->
 
-       <!-- Client Area -->
-<div class="client-area pt-100 pb-70">
-    <div class="container-fluid p-0">
-        <div class="section-title text-center">
-            <span>{{ trans('text.Testimonial') }}</span>
-            <h2>{{ trans('text.Client_tit_1') }}</h2>
-            <p>{{ trans('text.Client_desc_1') }}</p>
+       <!-- Client Area-
+        <div class="client-area pt-100 pb-70">
+            <div class="container-fluid p-0">
+                <div class="section-title text-center">
+                    <span>{{ trans('text.Testimonial') }}</span>
+                    <h2>{{ trans('text.Client_tit_1') }}</h2>
+                    <p>{{ trans('text.Client_desc_1') }}</p>
+                </div>
+
+                <div class="client-slider owl-carousel owl-theme">
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/pic-1.png" alt="Testimonial Images">
+                        </div>
+                        <h3>{{ trans('text.Client_name_1') }}</h3>
+                        <p>
+                        {{ trans('text.Client_desc_2') }}
+                        </p>
+                    </div>
+
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/pic-4.png" alt="Testimonial Images">
+                        </div>
+                        <h3>{{ trans('text.Client_name_2') }}</h3>
+                        <p>
+                        {{ trans('text.Client_desc_3') }}
+                        </p>
+                    </div>
+
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/testimonial-2.jpg" alt="Testimonial Images">
+                        </div>
+                        <h3>{{ trans('text.Client_name_3') }}</h3>
+                        <p>
+                        {{ trans('text.Client_desc_4') }}
+                        </p>
+                    </div>
+
+                    <div class="client-item">
+                        <div class="client-item-img">
+                            <img src="assets/img/testimonial/pic-3.png" alt="Testimonial Images">
+                        </div>
+                        <h3>{{ trans('text.Client_name_4') }}</h3>
+                        <p>
+                        {{ trans('text.Client_desc_5') }}
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="client-slider owl-carousel owl-theme">
-            <div class="client-item">
-                <div class="client-item-img">
-                    <img src="assets/img/testimonial/pic-1.png" alt="Testimonial Images">
-                </div>
-                <h3>{{ trans('text.Client_name_1') }}</h3>
+        - Client Area End -->
+        <section class="service-area pt-100 pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <span>{{ trans('text.principles_of_networking') }}</span>
+                <h2>{{ trans('text.network_goal_title') }}</h2>
                 <p>
-                {{ trans('text.Client_desc_2') }}
+                    {{ trans('text.network_goals_desc') }}
                 </p>
             </div>
-
-            <div class="client-item">
-                <div class="client-item-img">
-                    <img src="assets/img/testimonial/pic-4.png" alt="Testimonial Images">
+            <div class="row pt-45">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-card">
+                        <a href="#">
+                            <img src="assets/img/service-icon/1.png" alt="Images">
+                        </a>
+                        <a href="#">
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_1') }}</h3>
+                        </a>
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_11') }}
+                        </p>
+                    </div>
                 </div>
-                <h3>{{ trans('text.Client_name_2') }}</h3>
-                <p>
-                {{ trans('text.Client_desc_3') }}
-                </p>
-            </div>
 
-            <div class="client-item">
-                <div class="client-item-img">
-                    <img src="assets/img/testimonial/testimonial-2.jpg" alt="Testimonial Images">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-card">
+                        <a href="#">
+                            <img src="assets/img/service-icon/2.png" alt="Images">
+                        </a>
+                        <a href="#">
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_2') }}</h3>
+                        </a>
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_21') }}
+                        </p>
+                    </div>
                 </div>
-                <h3>{{ trans('text.Client_name_3') }}</h3>
-                <p>
-                 {{ trans('text.Client_desc_4') }}
-                </p>
-            </div>
 
-            <div class="client-item">
-                <div class="client-item-img">
-                    <img src="assets/img/testimonial/pic-3.png" alt="Testimonial Images">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-card">
+                        <a href="#">
+                            <img src="assets/img/service-icon/3.png" alt="Images">
+                        </a>
+                        <a href="#">
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_3') }}</h3>
+                        </a>
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_31') }}
+                        </p>
+                    </div>
                 </div>
-                <h3>{{ trans('text.Client_name_4') }}</h3>
-                <p>
-                {{ trans('text.Client_desc_5') }}
-                </p>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-card">
+                        <a href="#">
+                            <img src="assets/img/service-icon/4.png" alt="Images">
+                        </a>
+                        <a href="#">
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_4') }}</h3>
+                        </a>
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_41') }}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service-card">
+                        <a href="#">
+                            <img src="assets/img/service-icon/5.png" alt="Images">
+                        </a>
+                        <a href="#">
+                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_5') }}</h3>
+                        </a>
+                        <p class="truncate-text">
+                            {{ trans('text.network_principles_and_goals_51') }}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Client Area End -->
-
+    </section>
 
 @endsection

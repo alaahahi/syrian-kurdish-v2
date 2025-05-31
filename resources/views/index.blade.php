@@ -105,7 +105,7 @@
                         <span>{{ trans('text.about_us') }}</span>
                         <h2>{{ trans('text.about_tit') }}</h2>
                         <p>
-                            {{ trans('text.about_desc') }}
+                            {{ trans('text.network_message_desc') }}
                         </p>
 
 
@@ -207,7 +207,7 @@
     </section>
     <!-- Service Area End -->
 
-    <!-- Faq Area -->
+    <!-- Faq Area 
     <div class="faq-area pt-100 pb-70">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -286,9 +286,9 @@
             </div>
         </div>
     </div>
-    <!-- Faq Area End -->
+    Faq Area End -->
 
-    <!-- Portfolio Area -->
+    <!-- Portfolio Area 
     <section class="portfolio-area pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center">
@@ -370,12 +370,12 @@
             </div>
         </div>
     </section>
-    <!-- Portfolio Area End -->
+    Portfolio Area End -->
 
 
 
 
-    <!-- Member Area -->
+    <!-- Member Area
     <div class="member-area pb-70">
         <div class="container">
             <div class="section-title text-center">
@@ -532,9 +532,9 @@
             <img src="assets/img/shape/member-shape-1.png" alt="Shape">
         </div>
     </div>
-    <!-- Member Area End -->
+    Member Area End -->
 
-    <!-- Counter Area -->
+    <!-- Counter Area 
     <div class="counter-area pt-100 pb-70">
         <div class="container">
             <div class="row">
@@ -572,9 +572,9 @@
             </div>
         </div>
     </div>
-    <!-- Counter Area End -->
+     Counter Area End -->
 
-    <!-- Testimonial Area -->
+    <!-- Testimonial Area
     <div class="testimonial-area pt-100 pb-70">
         <div class="container-fluid">
             <div class="section-title text-center">
@@ -642,7 +642,7 @@
             <img src="assets/img/testimonial/shape-right.png" alt="Images">
         </div>
     </div>
-    <!-- Testimonial Area End -->
+     Testimonial Area End -->
 
     <!-- Blog Area -->
   
@@ -693,7 +693,7 @@
     </div>
     <!-- Blog Area End -->
 
-    <!-- Faq Area -->
+    <!-- Faq Area 
     <div class="faq-area-bg pt-100 pb-70">
         <div class="container">
             <div class="section-title text-center">
@@ -789,7 +789,7 @@
             </div>
         </div>
     </div>
-    <!-- Faq Area End -->
+   Faq Area End -->
     <style>
         .main-nav nav .navbar-nav .nav-item a {
             text-transform: capitalize;
