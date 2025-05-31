@@ -688,58 +688,6 @@
                     </div>
                 </div>
                 @endforeach
-            
-                <div class="blog-card">
-                        <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
-                                <img src="assets/img/blog/news3.webp" alt="Blog Images">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-tag">
-                                <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
-                            </div>
-                            <a href="{{ route('news.details') }}">
-                                <h3>{{ trans('text.news_tit3') }}</h3>
-                            </a>
-                            <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
-                        </div>
-                </div>
-                <div class="blog-card">
-                        <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
-                                <img src="assets/img/blog/news2.jpg" alt="Blog Images">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-tag">
-                                <a href="#"><span>{{ trans('text.portfolio_tit2') }}</span></a>
-                            </div>
-                            <a href="{{ route('news.details') }}">
-                                <h3>{{ trans('text.news_tit2') }}</h3>
-                            </a>
-                            <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
-                        </div>
-                    </div>
-
-                <div class="blog-card">
-                        <div class="blog-img">
-                            <a href="{{ route('news.details') }}">
-                                <img src="assets/img/blog/news1.jpeg" alt="Blog Images">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-tag">
-                                <a href="#"><span>{{ trans('text.portfolio_tit3') }}</span></a>
-                            </div>
-                            <a href="{{ route('news.details') }}">
-                                <h3>{{ trans('text.news_tit1') }}</h3>
-                            </a>
-                            <a href="{{ route('news.details') }}" class="read-btn">{{ trans('text.read_more') }}</a>
-                        </div>
-                    </div>
-            </div>
-
             </div>
         </div>
     </div>
