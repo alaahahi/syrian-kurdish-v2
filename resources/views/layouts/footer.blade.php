@@ -25,37 +25,6 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-list ml-50">
-                       <ul>
-                <li>
-                    <i class='bx bxs-chevron-right'></i> 
-                    <a href="{{ route('contact') }}">{{ __('text.direct_coverage') }}</a>
-                </li>
-                <li>
-                    <i class='bx bxs-chevron-right'></i>
-                    <a href="{{ route('contact') }}">{{ __('text.news_reports') }}</a>
-                </li>
-                <li>
-                    <i class='bx bxs-chevron-right'></i>
-                    <a href="{{ route('contact') }}">{{ __('text.political_economic_analysis') }}</a>
-                </li>
-                <li>
-                    <i class='bx bxs-chevron-right'></i>
-                    <a href="{{ route('contact') }}">{{ __('text.daily_newsletters') }}</a>
-                </li>
-                <li>
-                    <i class='bx bxs-chevron-right'></i> 
-                    <a href="{{ route('contact') }}">{{ __('text.live_streaming_services') }}</a>
-                </li>
-                <li>
-                    <i class='bx bxs-chevron-right'></i>
-                    <a href="{{ route('contact') }}">{{ __('text.exclusive_interviews') }}</a>
-                </li>
-            </ul>
-
-                    </div>
-                </div>
 
                 <div class="col-lg-2 col-md-6">
                     <div class="footer-list">
