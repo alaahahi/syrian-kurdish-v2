@@ -11,7 +11,7 @@
 
                 </p>
             </div> -->
-            <div class="row  pt-45">
+            <div class="row  pt-45 mt-4">
             <div class="service-slider owl-carousel owl-theme">
                 @foreach ($posts as $post)
                 @php
