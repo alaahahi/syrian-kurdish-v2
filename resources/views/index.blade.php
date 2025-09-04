@@ -1,5 +1,51 @@
 @extends('layouts.content')
 @section('content')
+
+<div class="blog-area  pb-70">
+        <div class="container">
+            <div class="section-title text-center">
+                <span>{{ trans('text.news') }}</span>
+                <h2>{{ trans('text.latest_news') }}</h2>
+                <p>
+                    {{ trans('text.news_tit') }}
+
+                </p>
+            </div>
+            <div class="row  pt-45">
+            <div class="service-slider owl-carousel owl-theme">
+                @foreach ($posts as $post)
+                @php
+                    $translationTitle = $post->translations->where('column_name', 'title')
+                                      ->where('locale', app()->getLocale())->first();
+                    $translationSlug = $post->translations->where('column_name', 'slug')
+                                      ->where('locale', app()->getLocale())->first();
+            
+                    $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
+                    $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
+                @endphp
+            
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
+                            <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
+                        </a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tag">
+                            <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
+                        </div>
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
+                            <h3>{{ $translatedTitle }}</h3>
+                        </a>
+                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/" class="read-btn">
+                            {{ trans('text.read_more') }}
+                        </a>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
     <!-- Main Banner -->
     <div class="main-banner">
         <div class="container-fluid">
@@ -646,51 +692,7 @@
 
     <!-- Blog Area -->
   
-    <div class="blog-area  pb-70">
-        <div class="container">
-            <div class="section-title text-center">
-                <span>{{ trans('text.news') }}</span>
-                <h2>{{ trans('text.latest_news') }}</h2>
-                <p>
-                    {{ trans('text.news_tit') }}
-
-                </p>
-            </div>
-            <div class="row  pt-45">
-            <div class="service-slider owl-carousel owl-theme">
-                @foreach ($posts as $post)
-                @php
-                    $translationTitle = $post->translations->where('column_name', 'title')
-                                      ->where('locale', app()->getLocale())->first();
-                    $translationSlug = $post->translations->where('column_name', 'slug')
-                                      ->where('locale', app()->getLocale())->first();
-            
-                    $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
-                    $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
-                @endphp
-            
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
-                            <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
-                        </a>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-tag">
-                            <a href="#"><span>{{ trans('text.portfolio_tit1') }}</span></a>
-                        </div>
-                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
-                            <h3>{{ $translatedTitle }}</h3>
-                        </a>
-                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/" class="read-btn">
-                            {{ trans('text.read_more') }}
-                        </a>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
+ 
     <!-- Blog Area End -->
 
     <!-- Faq Area 
