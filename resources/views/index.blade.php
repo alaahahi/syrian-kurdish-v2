@@ -1,16 +1,16 @@
 @extends('layouts.content')
 @section('content')
 
-<div class="blog-area  pb-70">
+   <div class="blog-area  pb-70" style="margin-top: 100px;">
         <div class="container">
-            <div class="section-title text-center">
+            <!-- <div class="section-title text-center">
                 <span>{{ trans('text.news') }}</span>
                 <h2>{{ trans('text.latest_news') }}</h2>
                 <p>
                     {{ trans('text.news_tit') }}
 
                 </p>
-            </div>
+            </div> -->
             <div class="row  pt-45">
             <div class="service-slider owl-carousel owl-theme">
                 @foreach ($posts as $post)
