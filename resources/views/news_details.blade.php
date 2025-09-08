@@ -124,13 +124,13 @@
                                 @endphp
                                 <div class="post-wrap">
                                     <article class="item">
-                                        <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/" class="thumb">
-                                            <span class="fullimage cover bg1" role="img"></span>
+                                        <a href="{{ $translatedSlug }}/" class="thumb">
+                                            <img src="{{ env('APP_URL') }}/storage/{{ $post->image ?? '' }}" alt="Blog Images cover">
                                         </a>
                                         <div class="info">
                                             <time datetime="2025-02-10">{{ $month }}, {{ $year }}</time>
                                             <h4 class="title usmall">
-                                                <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
+                                                <a href="{{ $translatedSlug }}/">
                                                     {{ $translatedTitle }}
                                                 </a>
                                             </h4>
@@ -145,14 +145,14 @@
                                 <h3 class="widget-title">{{ trans('text.archives') }}</h3>
                                 <div class="post-wrap">
                                     <ul>
-                                        <li><a href="#">January <span>2025</span></a></li>
-                                        <li><a href="#">February <span>2025</span></a></li>
+                                        <li><a href="#"> <span>2025</span></a></li>
+                                        <li><a href="#"> <span>2025</span></a></li>
                                     </ul>
                                 </div>
                             </section>
                     
                             <!-- Categories Widget -->
-                            <section class="widget widget_categories">
+                            <!-- <section class="widget widget_categories">
                                 <h3 class="widget-title">{{ trans('text.categories') }}</h3>
                                 <div class="post-wrap">
                                     <ul>
@@ -160,18 +160,8 @@
                                         <li><a href="#">{{ trans('text.data_research') }} <span>(07)</span></a></li>
                                     </ul>
                                 </div>
-                            </section>
+                            </section> -->
                     
-                            <!-- Tags Widget -->
-                            <section class="widget widget_tag">
-                                <h3 class="widget-title">{{ trans('text.tags') }}</h3>
-                                <div class="post-wrap">
-                                    <ul>
-                                        <li><a href="#">{{ trans('text.seo') }}</a></li>
-                                        <li><a href="#">{{ trans('text.marketing') }}</a></li>
-                                    </ul>
-                                </div>
-                            </section>
                         </div>
                     </div>
                     
