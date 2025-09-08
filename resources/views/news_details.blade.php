@@ -121,11 +121,15 @@
                                 <h3 class="widget-title">{{ trans('text.popular_posts') }}</h3>
                                 @foreach ($posts as $post)
                                 @php
+                                @if($post->translations)
                                     $translationTitle = $post->translations->where('column_name', 'title')
                                                       ->where('locale', app()->getLocale())->first();
                                     $translationSlug = $post->translations->where('column_name', 'slug')
                                                       ->where('locale', app()->getLocale())->first();
-                            
+                                @else
+                                    $translatedTitle = $post->title;
+                                    $translatedSlug = $post->slug;
+                                @endif
                                     $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
                                     $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
 
