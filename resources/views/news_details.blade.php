@@ -1,17 +1,18 @@
 @extends('layouts.content')
 @php
-     $locale = app()->getLocale();
-    @if($post->translations ?? '')
+    $locale = app()->getLocale();
+
+     if($post->translations ?? ''){
     $translations = $post->translations->whereIn('column_name', ['title', 'slug','content'])->where('locale', $locale);
     // استخراج الترجمة إن وجدت
     $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? $post->title;
     $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
     $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
-    @else
+     }else{
     $translatedTitle = $post->title;
     $translatedSlug = $post->slug;
     $translatedContent = $post->content;
-    @endif
+    }
 @endphp
 @section('content')
         <!-- Inner Banner -->
