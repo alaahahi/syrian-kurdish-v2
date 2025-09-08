@@ -141,7 +141,7 @@
                             </section>
                     
                             <!-- Archives Widget -->
-                            <section class="widget widget_categories">
+                            <!-- <section class="widget widget_categories">
                                 <h3 class="widget-title">{{ trans('text.archives') }}</h3>
                                 <div class="post-wrap">
                                     <ul>
@@ -149,7 +149,7 @@
                                         <li><a href="#"> <span>2025</span></a></li>
                                     </ul>
                                 </div>
-                            </section>
+                            </section> -->
                     
                             <!-- Categories Widget -->
                             <!-- <section class="widget widget_categories">
