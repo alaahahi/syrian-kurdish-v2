@@ -9,6 +9,7 @@
     $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
     $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
      }else{
+        dd($post);
     $translatedTitle = $post->title;
     $translatedSlug = $post->slug;
     $translatedContent = $post->content;
