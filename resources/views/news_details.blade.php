@@ -49,7 +49,7 @@
                                 @if (!empty($gallery) && is_array($gallery))
                                     @foreach ($gallery as $image)
                                         <div class="bolg-gallery-item">
-                                            <img src="{{ env('APP_URL'). 'storage/' . str_replace('\\', '/', $image) }}" alt="Blog Images">
+                                            <img src="{{ env('APP_URL'). '/storage/' . str_replace('\\', '/', $image) }}" alt="Blog Images">
                                         </div>
                                     @endforeach
                                 @endif
