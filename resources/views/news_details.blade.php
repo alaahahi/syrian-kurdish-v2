@@ -62,30 +62,40 @@
 								</div>
 
 								<div class="article-share">
-									<ul class="social">
-										<li>
-											<a href="#" target="_blank">
-												<i class='bx bxl-facebook'></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" target="_blank">
-												<i class='bx bxl-twitter'></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" target="_blank">
-												<i class='bx bxl-linkedin'></i>
-											</a>
-										</li>
-										<li>
-											<a href="#" target="_blank">
-												<i class='bx bxl-pinterest-alt'></i>
-											</a>
-										</li>
-										
-									</ul>
-								</div>
+                                    <ul class="social">
+                                        <!-- Facebook -->
+                                        <li>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                <i class='bx bxl-facebook'></i>
+                                            </a>
+                                        </li>
+
+                                        <!-- Twitter -->
+                                        <li>
+                                            <a href="https://twitter.com/intent/tweet?url={{ urlencode(url()->current()) }}&text={{ urlencode($title ?? config('app.name')) }}" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                <i class='bx bxl-twitter'></i>
+                                            </a>
+                                        </li>
+
+                                        <!-- LinkedIn -->
+                                        <li>
+                                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(url()->current()) }}" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                <i class='bx bxl-linkedin'></i>
+                                            </a>
+                                        </li>
+
+                                        <!-- Pinterest -->
+                                        <li>
+                                            <a href="https://pinterest.com/pin/create/button/?url={{ urlencode(url()->current()) }}&media={{ urlencode($image ?? asset('default.jpg')) }}&description={{ urlencode($title ?? config('app.name')) }}" 
+                                            target="_blank" rel="noopener noreferrer">
+                                                <i class='bx bxl-pinterest-alt'></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
