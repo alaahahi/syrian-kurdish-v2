@@ -126,7 +126,7 @@
                                 <h3 class="widget-title">{{ trans('text.popular_posts') }}</h3>
                                 @foreach ($posts as $post)
                                 @php
-                                @if($post->translations ?? '')  
+                                if($post->translations ?? ''){
                                     $translationTitle = $post->translations->where('column_name', 'title')
                                                       ->where('locale', app()->getLocale())->first();
                                     $translationSlug = $post->translations->where('column_name', 'slug')
@@ -134,10 +134,10 @@
 
                                     $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
                                     $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
-                                    @else
+                                    }else{
                                         $translatedTitle = $post->title;
                                         $translatedSlug = $post->slug;
-                                    @endif
+                                    }
                                     $dateParts = explode('-', $post->published_at); // تقسيم التاريخ إلى [السنة, الشهر, اليوم]
                                     $year = $dateParts[0] ?? '';
                                     $month = date('M', mktime(0, 0, 0, $dateParts[1] ?? 1, 10)); // تحويل الرقم إلى اسم الشهر
