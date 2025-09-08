@@ -1,13 +1,17 @@
 @extends('layouts.content')
 @php
-    // البحث عن ترجمة العنوان والـ slug بلغة التطبيق الحالية
-    $locale = app()->getLocale();
+     $locale = app()->getLocale();
+    @if($post->translations ?? '')
     $translations = $post->translations->whereIn('column_name', ['title', 'slug','content'])->where('locale', $locale);
     // استخراج الترجمة إن وجدت
     $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? $post->title;
     $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
     $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
-
+    @else
+    $translatedTitle = $post->title;
+    $translatedSlug = $post->slug;
+    $translatedContent = $post->content;
+    @endif
 @endphp
 @section('content')
         <!-- Inner Banner -->
@@ -121,14 +125,18 @@
                                 <h3 class="widget-title">{{ trans('text.popular_posts') }}</h3>
                                 @foreach ($posts as $post)
                                 @php
+                                @if($post->translations ?? '')  
                                     $translationTitle = $post->translations->where('column_name', 'title')
                                                       ->where('locale', app()->getLocale())->first();
                                     $translationSlug = $post->translations->where('column_name', 'slug')
                                                       ->where('locale', app()->getLocale())->first();
-                            
+
                                     $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
                                     $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
-
+                                    @else
+                                        $translatedTitle = $post->title;
+                                        $translatedSlug = $post->slug;
+                                    @endif
                                     $dateParts = explode('-', $post->published_at); // تقسيم التاريخ إلى [السنة, الشهر, اليوم]
                                     $year = $dateParts[0] ?? '';
                                     $month = date('M', mktime(0, 0, 0, $dateParts[1] ?? 1, 10)); // تحويل الرقم إلى اسم الشهر
