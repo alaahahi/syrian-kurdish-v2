@@ -4,7 +4,7 @@
     <div class="inner-banner inner-bg2">
         <div class="container">
             <div class="inner-title text-center">
-                <h3>{{ trans('text.press_freedoms') }}</h3>
+                <h3>{{ trans('text.press_freedoms_h') }}</h3>
                 <ul>
                     <li>
                         <a href="/">{{ trans('text.homepage') }}</a>
@@ -12,7 +12,7 @@
                     <li>
                         <i class='bx bxs-chevrons-right'></i>
                     </li>
-                    <li>{{ trans('text.press_freedoms') }}</li>
+                    <li>{{ trans('text.press_freedoms_h') }}</li>
                 </ul>
             </div>
         </div>
@@ -69,8 +69,8 @@
         </div>
     </section>
 
-  <div class="faq-bg">
-    <div class="faq-bg-into pt-100 pb-70">
+    <div class="faq-bg">
+        <div class="faq-bg-into pt-100 pb-70">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -174,46 +174,46 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
-</div>
 
-<section class="press-freedom pb-90 mt-5">
-    <div class="container">
+    <section class="press-freedom pb-90 mt-5">
+        <div class="container">
 
-        <div class="card shadow-sm p-4">
-            <div class="row">
-                <!-- نموذج توثيق الانتهاكات -->
-                <div class="col-lg-6">
-                    <div class="report-form">
-                        <h3>{{ trans('text.report_violation') }}</h3>
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label for="name">{{ trans('text.journalist_name') }}</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="violation-type">{{ trans('text.violation_type') }}</label>
-                                <select id="violation-type" name="violation-type" class="form-control" required>
-                                    <option value="اعتقال">{{ trans('text.arbitrary_arrest') }}</option>
-                                    <option value="منع تغطية">{{ trans('text.coverage_restriction') }}</option>
-                                    <option value="مصادرة معدات">{{ trans('text.equipment_confiscation') }}</option>
-                                    <option value="تهديد">{{ trans('text.threat') }}</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="details">{{ trans('text.details') }}</label>
-                                <textarea id="details" name="details" class="form-control" rows="4" required></textarea>
-                            </div>
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn default-btn">{{ trans('text.submit_report') }}</button>
-                            </div>
-                        </form>
+            <div class="card shadow-sm p-4">
+                <div class="row">
+                    <!-- نموذج توثيق الانتهاكات -->
+                    <div class="col-lg-6">
+                        <div class="report-form">
+                            <h3 class>{{ trans('text.report_violation') }}</h3>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="name">{{ trans('text.journalist_name') }}</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="violation-type">{{ trans('text.violation_type') }}</label>
+                                    <select id="violation-type" name="violation-type" class="form-control" required>
+                                        <option value="اعتقال">{{ trans('text.arbitrary_arrest') }}</option>
+                                        <option value="منع تغطية">{{ trans('text.coverage_restriction') }}</option>
+                                        <option value="مصادرة معدات">{{ trans('text.equipment_confiscation') }}</option>
+                                        <option value="تهديد">{{ trans('text.threat') }}</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="details">{{ trans('text.details') }}</label>
+                                    <textarea id="details" name="details" class="form-control" rows="4" required></textarea>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn default-btn">{{ trans('text.submit_report') }}</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
 @endsection

@@ -3,14 +3,11 @@
 
    <div class="blog-area  pb-70" style="padding-top: 120px;">
         <div class="container">
-            <!-- <div class="section-title text-center">
-                <span>{{ trans('text.news') }}</span>
+            <div class="section-title text-center">
+                <!-- <span>{{ trans('text.news') }}</span> -->
                 <h2>{{ trans('text.latest_news') }}</h2>
-                <p>
-                    {{ trans('text.news_tit') }}
-
-                </p>
-            </div> -->
+       
+            </div>
             <div class="row  pt-45 mt-4">
             <div class="service-slider owl-carousel owl-theme">
                 @foreach ($posts as $post)
@@ -149,8 +146,7 @@
                 <div class="col-lg-7 col-xxl-6">
                     <div class="about-content about-width">
                         <span>{{ trans('text.about_us') }}</span>
-                        <h2>{{ trans('text.about_tit') }}</h2>
-                        <p>
+                         <p>
                             {{ trans('text.network_message_desc') }}
                         </p>
 
@@ -173,8 +169,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <span>{{ trans('text.principles_of_networking') }}</span>
-                <h2>{{ trans('text.network_goal_title') }}</h2>
-                <p>
+                 <p>
                     {{ trans('text.network_goals_desc') }}
                 </p>
             </div>

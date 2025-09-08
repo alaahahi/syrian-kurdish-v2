@@ -142,8 +142,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <span>{{ trans('text.principles_of_networking') }}</span>
-                <h2>{{ trans('text.network_goal_title') }}</h2>
-                <p>
+                 <p>
                     {{ trans('text.network_goals_desc') }}
                 </p>
             </div>

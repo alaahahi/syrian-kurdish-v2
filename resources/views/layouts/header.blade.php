@@ -45,7 +45,7 @@ dir="rtl"
 
    <meta name="description" content="{{ trans('text.site_description') }}">
 
-   <meta name="keywords" content="شبكة الصحفيين الكرد السوريين, أخبار, إعلام, صحافة, حرية التعبير">
+   <meta name="keywords" content="شبكة الصحفيين الكُرد  السوريين, أخبار, إعلام, صحافة, حرية التعبير">
 
    <meta name="robots" content="index, follow">
 
@@ -149,7 +149,7 @@ dir="rtl"
                                     <li class="nav-item">
                                         <a href="{{ route('lang.switch', 'ku') }}"
                                             class="dropdown-item {{ app()->getLocale() === 'ku' ? 'active' : '' }}">
-                                            KR الكردية
+                                            KR الكُرد ية
                                         </a>
                                     </li>
                                     <li class="nav-item">
