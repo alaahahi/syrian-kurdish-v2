@@ -126,12 +126,12 @@ $translatedContent = optional($translations->where('column_name', 'content')->fi
                                     $locale = app()->getLocale();
 
                                     // التحقق من وجود الترجمات
-                                    $translationTitle = optional($post->translations)
+                                    $translationTitle = optional($post->translations ?? '')
                                         ->where('column_name', 'title')
                                         ->where('locale', $locale)
                                         ->first();
 
-                                    $translationSlug = optional($post->translations)
+                                    $translationSlug = optional($post->translations ?? '')
                                         ->where('column_name', 'slug')
                                         ->where('locale', $locale)
                                         ->first();
