@@ -2,13 +2,11 @@
 @php
     // البحث عن ترجمة العنوان والـ slug بلغة التطبيق الحالية
     $locale = app()->getLocale();
-    $translations = optional($post->translations ?? '')
-    ->whereIn('column_name', ['title', 'slug', 'content'])
-    ->where('locale', $locale);
-
-    $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? optional($post)->title;
-    $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? optional($post)->slug;
-$translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? optional($post)->content;
+    $translations = $post->translations->whereIn('column_name', ['title', 'slug','content'])->where('locale', $locale);
+    // استخراج الترجمة إن وجدت
+    $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? $post->title;
+    $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
+    $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
 
 @endphp
 @section('content')
@@ -123,29 +121,17 @@ $translatedContent = optional($translations->where('column_name', 'content')->fi
                                 <h3 class="widget-title">{{ trans('text.popular_posts') }}</h3>
                                 @foreach ($posts as $post)
                                 @php
-                                    $locale = app()->getLocale();
-
-                                    // التحقق من وجود الترجمات
-                                    $translationTitle = optional($post->translations ?? '')
-                                        ->where('column_name', 'title')
-                                        ->where('locale', $locale)
-                                        ->first();
-
-                                    $translationSlug = optional($post->translations ?? '')
-                                        ->where('column_name', 'slug')
-                                        ->where('locale', $locale)
-                                        ->first();
-
-                                    // fallback إذا ماكو ترجمة
+                                    $translationTitle = $post->translations->where('column_name', 'title')
+                                                      ->where('locale', app()->getLocale())->first();
+                                    $translationSlug = $post->translations->where('column_name', 'slug')
+                                                      ->where('locale', app()->getLocale())->first();
+                            
                                     $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
                                     $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
 
-                                    // معالجة التاريخ
-                                    $dateParts = explode('-', $post->published_at ?? '');
+                                    $dateParts = explode('-', $post->published_at); // تقسيم التاريخ إلى [السنة, الشهر, اليوم]
                                     $year = $dateParts[0] ?? '';
-                                    $month = isset($dateParts[1]) 
-                                        ? date('M', mktime(0, 0, 0, (int)$dateParts[1], 10)) 
-                                        : '';
+                                    $month = date('M', mktime(0, 0, 0, $dateParts[1] ?? 1, 10)); // تحويل الرقم إلى اسم الشهر
                                 @endphp
                                 <div class="post-wrap">
                                     <article class="item">
