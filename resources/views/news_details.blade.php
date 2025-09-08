@@ -123,21 +123,29 @@ $translatedContent = optional($translations->where('column_name', 'content')->fi
                                 <h3 class="widget-title">{{ trans('text.popular_posts') }}</h3>
                                 @foreach ($posts as $post)
                                 @php
-                                @if($post->translations)
-                                    $translationTitle = $post->translations->where('column_name', 'title')
-                                                      ->where('locale', app()->getLocale())->first();
-                                    $translationSlug = $post->translations->where('column_name', 'slug')
-                                                      ->where('locale', app()->getLocale())->first();
-                                @else
-                                    $translatedTitle = $post->title;
-                                    $translatedSlug = $post->slug;
-                                @endif
+                                    $locale = app()->getLocale();
+
+                                    // التحقق من وجود الترجمات
+                                    $translationTitle = optional($post->translations)
+                                        ->where('column_name', 'title')
+                                        ->where('locale', $locale)
+                                        ->first();
+
+                                    $translationSlug = optional($post->translations)
+                                        ->where('column_name', 'slug')
+                                        ->where('locale', $locale)
+                                        ->first();
+
+                                    // fallback إذا ماكو ترجمة
                                     $translatedTitle = $translationTitle ? $translationTitle->value : $post->title;
                                     $translatedSlug = $translationSlug ? $translationSlug->value : $post->slug;
 
-                                    $dateParts = explode('-', $post->published_at); // تقسيم التاريخ إلى [السنة, الشهر, اليوم]
+                                    // معالجة التاريخ
+                                    $dateParts = explode('-', $post->published_at ?? '');
                                     $year = $dateParts[0] ?? '';
-                                    $month = date('M', mktime(0, 0, 0, $dateParts[1] ?? 1, 10)); // تحويل الرقم إلى اسم الشهر
+                                    $month = isset($dateParts[1]) 
+                                        ? date('M', mktime(0, 0, 0, (int)$dateParts[1], 10)) 
+                                        : '';
                                 @endphp
                                 <div class="post-wrap">
                                     <article class="item">
