@@ -2,7 +2,7 @@
 @php
     // البحث عن ترجمة العنوان والـ slug بلغة التطبيق الحالية
     $locale = app()->getLocale();
-    $translations = optional($post->translations)
+    $translations = optional($post->translations ?? '')
     ->whereIn('column_name', ['title', 'slug', 'content'])
     ->where('locale', $locale);
 
