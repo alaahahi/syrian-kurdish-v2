@@ -2,11 +2,13 @@
 @php
     // البحث عن ترجمة العنوان والـ slug بلغة التطبيق الحالية
     $locale = app()->getLocale();
-    $translations = $post->translations->whereIn('column_name', ['title', 'slug','content'])->where('locale', $locale);
-    // استخراج الترجمة إن وجدت
-    $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? $post->title;
-    $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? $post->slug;
-    $translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? $post->content;
+    $translations = optional($post->translations)
+    ->whereIn('column_name', ['title', 'slug', 'content'])
+    ->where('locale', $locale);
+
+    $translatedTitle = optional($translations->where('column_name', 'title')->first())->value ?? optional($post)->title;
+    $translatedSlug = optional($translations->where('column_name', 'slug')->first())->value ?? optional($post)->slug;
+$translatedContent = optional($translations->where('column_name', 'content')->first())->value ?? optional($post)->content;
 
 @endphp
 @section('content')
