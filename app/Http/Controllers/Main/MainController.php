@@ -72,10 +72,18 @@ class MainController extends Controller
             $query->where('column_name', 'slug')
                   ->where('value', $slug)
                   ->where('locale', app()->getLocale());
-        })->with('translations')->first();
-
-        $posts = Post::with('translations')->get();
-        return view('news_details', compact('posts','post'));
+        })
+        ->with('translations')
+        ->first();
+    
+    if (!$post) {
+        // حاول تجيب البوست بالـ slug الأصلي
+        $post = Post::where('slug', $slug)->with('translations')->firstOrFail();
+    }
+    
+    $posts = Post::with('translations')->get();
+    
+    return view('news_details', compact('posts', 'post'));
     }
 
     
