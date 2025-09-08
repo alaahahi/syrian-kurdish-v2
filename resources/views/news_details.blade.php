@@ -89,11 +89,12 @@
 
                                         <!-- Pinterest -->
                                         <li>
-                                            <a href="https://pinterest.com/pin/create/button/?url={{ urlencode(url()->current()) }}&media={{ urlencode($image ?? asset('default.jpg')) }}&description={{ urlencode($title ?? config('app.name')) }}" 
+                                            <a href="https://api.whatsapp.com/send?text={{ urlencode($title ?? config('app.name')) }}%20{{ urlencode(url()->current()) }}" 
                                             target="_blank" rel="noopener noreferrer">
-                                                <i class='bx bxl-pinterest-alt'></i>
+                                                <i class='bx bxl-whatsapp'></i>
                                             </a>
                                         </li>
+
                                     </ul>
                                 </div>
                             </div>
