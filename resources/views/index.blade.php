@@ -24,7 +24,7 @@
                 <div class="blog-card">
                     <div class="blog-img">
                         <a href="{{ trans('text.blogs') }}/{{ $translatedSlug }}/">
-                            <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
+                            <img src="{{ env('APP_URL') }}/storage/{{ $post->image ?? '' }}" alt="Blog Images">
                         </a>
                     </div>
                     <div class="blog-content">

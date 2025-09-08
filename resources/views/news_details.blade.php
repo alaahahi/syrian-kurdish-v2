@@ -35,7 +35,7 @@
                     <div class="col-lg-8">
                         <div class="blog-dtls-content">
                             <div class="blog-dtls-img">
-                                <img src="/storage/{{ $post->image ?? '' }}" alt="Blog Images">
+                                <img src="{{ env('APP_URL') }}/storage/{{ $post->image ?? '' }}" alt="Blog Images">
                             </div>
                             <div class="blog-text">
                                 <h2>{{$translatedTitle  ?? ''}}</h2>
@@ -49,7 +49,7 @@
                                 @if (!empty($gallery) && is_array($gallery))
                                     @foreach ($gallery as $image)
                                         <div class="bolg-gallery-item">
-                                            <img src="{{ asset('storage/' . str_replace('\\', '/', $image)) }}" alt="Blog Images">
+                                            <img src="{{ env('APP_URL'). 'storage/' . str_replace('\\', '/', $image) }}" alt="Blog Images">
                                         </div>
                                     @endforeach
                                 @endif
