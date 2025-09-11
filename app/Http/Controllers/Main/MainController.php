@@ -70,8 +70,7 @@ class MainController extends Controller
     {   
         $post = Post::whereHas('translations', function ($query) use ($slug) {
             $query->where('column_name', 'slug')
-                  ->where('value', $slug)
-                  ->where('locale', app()->getLocale());
+                  ->where('value', $slug);
         })->with('translations')->first();
         if(!$post){
             $post = Post::where('slug', $slug)->with('translations')->first();
