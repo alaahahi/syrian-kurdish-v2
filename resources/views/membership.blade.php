@@ -27,7 +27,7 @@
                     <div class="col-lg-6">
                         <div class="service-dtls-content">
                             <div class="service-dtls-img">
-                                <img src="assets/img/blog/121.png" alt="Service Image">
+                                <img src="assets/img/blog/logo-syria.jpg" alt="Service Image">
                             </div>
                             
                         
