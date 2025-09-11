@@ -106,7 +106,7 @@ dir="rtl"
                                 </a>
                             </li>
                              <li class="nav-item">
-                                <a href="{{ route('services') }}" class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}">
+                                <a href="{{ route('press_freedoms') }}" class="nav-link {{ request()->routeIs('press_freedoms') ? 'active' : '' }}">
                                     {{ trans('text.press_freedoms_h') }}
                                 </a>
                             </li>

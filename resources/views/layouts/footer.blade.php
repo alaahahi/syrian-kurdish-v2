@@ -35,7 +35,7 @@
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">{{ trans('text.press_freedoms_h') }}</a>
+                                <a href="{{ route('press_freedoms') }}" class="{{ request()->routeIs('press_freedoms') ? 'active' : '' }}">{{ trans('text.press_freedoms_h') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>

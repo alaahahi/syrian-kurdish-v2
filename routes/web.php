@@ -76,9 +76,9 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/services', function () {
+Route::get('/press_freedoms', function () {
     return view('services');
-})->name('services');
+})->name('press_freedoms');
 
 Route::get('/membership.request', function () {
     return view('membership_request');
