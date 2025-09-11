@@ -31,23 +31,23 @@
                          <ul>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="/">{{ trans('text.News') }}</a>
+                                <a href="/" class="{{ request()->is('/') ? 'active' : '' }}">{{ trans('text.News') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('services') }}">{{ trans('text.press_freedoms_h') }}</a>
+                                <a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">{{ trans('text.press_freedoms_h') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('membership') }}">{{ trans('text.membership') }}</a>
+                                <a href="{{ route('membership') }}" class="{{ request()->routeIs('membership') ? 'active' : '' }}">{{ trans('text.membership') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('about') }}">{{ trans('text.about_network') }}</a>
+                                <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">{{ trans('text.about_network') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('contact') }}">{{ trans('text.contact') }}</a>
+                                <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">{{ trans('text.contact') }}</a>
                             </li>
                         </ul>
                     </div>

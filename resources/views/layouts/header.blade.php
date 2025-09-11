@@ -101,12 +101,12 @@ dir="rtl"
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                                <a href="/" class="nav-link active">
+                                <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">
                                     {{ trans('text.News') }}
                                 </a>
                             </li>
                              <li class="nav-item">
-                                <a href="{{ route('services') }}" class="nav-link">
+                                <a href="{{ route('services') }}" class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}">
                                     {{ trans('text.press_freedoms_h') }}
                                 </a>
                             </li>
@@ -116,18 +116,18 @@ dir="rtl"
                                 </a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="{{ route('membership') }}" class="nav-link">
+                                <a href="{{ route('membership') }}" class="nav-link {{ request()->routeIs('membership') ? 'active' : '' }}">
                                     {{ trans('text.membership') }}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('about') }}" class="nav-link">
+                                <a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">
                                     {{ trans('text.about_network') }}
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{ route('contact') }}" class="nav-link">
+                                <a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">
                                     {{ trans('text.contact') }}
                                 </a>
                             </li>
