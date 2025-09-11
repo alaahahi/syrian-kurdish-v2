@@ -144,6 +144,36 @@
                 <div class="card-header text-primary text-center">
                     <h4>{{ trans('text.Membership_form_of_the_Syrian_Kurdish_Journalists_Network') }}</h4>
                 </div>
+
+                   <!-- Membership Conditions Section -->
+                   <div class="membership-conditions-section mt-5">
+                                <h4 class="conditions-title">{{ trans('text.membership_conditions') }}</h4>
+                                <div class="conditions-list">
+                                    <div class="condition-item">
+                                        <span class="condition-number">1.</span>
+                                        <span class="condition-text">{{ trans('text.membership_condition_1') }}</span>
+                                    </div>
+                                    <div class="condition-item">
+                                        <span class="condition-number">2.</span>
+                                        <span class="condition-text">{{ trans('text.membership_condition_2') }}</span>
+                                    </div>
+                                    <div class="condition-item">
+                                        <span class="condition-number">3.</span>
+                                        <span class="condition-text">{{ trans('text.membership_condition_3') }}</span>
+                                    </div>
+                                    <div class="condition-item">
+                                        <span class="condition-number">4.</span>
+                                        <span class="condition-text">{{ trans('text.membership_condition_4') }}</span>
+                                    </div>
+                                    <div class="condition-item">
+                                        <span class="condition-number">5.</span>
+                                        <span class="condition-text">{{ trans('text.membership_condition_5') }}</span>
+                                    </div>
+                                </div>
+                                <div class="condition-note">
+                                    <p><strong>{{ trans('text.membership_note') }}</strong></p>
+                                </div>
+                            </div>
                 <form action="{{ route('membership.submit') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
@@ -300,5 +330,23 @@
         </div>
     </div>
     
+    <style>
+    .membership-conditions-section {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid #007bff;
+        margin: 30px 0;
+    }
 
+    .conditions-title {
+        color: #007bff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        text-align: center;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 15px;
+    }
+    </style>
 @endsection

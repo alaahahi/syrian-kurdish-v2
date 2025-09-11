@@ -450,7 +450,23 @@ Syrian journalists who have left the profession after working in it for no less 
 'seo' => 'SEO',
 'marketing' => 'Marketing',
 'site_description' => 'An independent news platform dedicated to publishing accurate and unbiased reports on Kurdish and Syrian issues.',
-
+'choose_language' => 'Choose Language',
+'membership_conditions' => 'Membership Conditions',
+'membership_condition_1' => 'Must be Syrian and believe in the importance of protecting Kurdish culture and identity.',
+'membership_condition_2' => 'The age of the applicant for network membership must not be less than 20 years.',
+'membership_condition_3' => 'Must have practiced journalism for at least two years.',
+'membership_condition_4' => 'Journalism must be his primary profession.',
+'membership_condition_5' => 'If the applicant is practicing journalism, he must submit at least 20 media materials from his media production.',
+'membership_note' => 'Note: All masculine forms used in this text apply equally to female colleagues without any gender discrimination.',
+'network_definition' => 'Network Definition',
+'network_goals_title' => 'Network Goals',
+'network_message_title' => 'Network Message',
+'network_principles_title' => 'Network Principles',
+'network_vision_title' => 'Network Vision',
+'network_definition_text' => 'Definition of the Syrian Kurdish Journalists Network: It is an independent organizational media framework that includes Syrian media professionals who believe in the specificity of Kurdish identity, to elevate the media reality professionally.',
+'network_principles_goals_title' => 'Network Principles and Goals:',
+'network_vision_text' => 'Independent and professional Syrian Kurdish media.',
+'network_message_text' => 'An independent media network that aims to defend the rights of journalists and Kurdish media institutions, protect them, protect Kurdish culture and common Syrian national values for media workers in the region and achieve justice and independence; with commitment to the journalistic code of honor. The network seeks to provide the necessary facilities for journalists, to contribute to motivating them to practice their profession professionally, and to work hard to pressure all parties concerned with journalistic work, using all available means to prevent their arrest, restrict their work, limit freedom of expression, or influence journalistic products in any way, whether through direct communication with concerned parties or international organizations with the ability to influence within international rights that preserve their security and safety; in addition to establishing qualification and training courses, to raise the journalistic level professionally and technically, and benefit from modern technical means available to spread awareness and democratic culture among all segments of Syrian society through media and institutional means and frameworks working in the same field.',
 
 
 ];

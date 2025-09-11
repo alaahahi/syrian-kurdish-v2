@@ -5087,3 +5087,87 @@ Animation CSS End
         font-size: 13px;
     }
 }
+
+
+
+.conditions-list {
+    margin-bottom: 25px;
+}
+
+.condition-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.condition-item:hover {
+    transform: translateX(5px);
+}
+
+.condition-number {
+    background: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.condition-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.condition-note {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.condition-note p {
+    margin: 0;
+    color: #856404;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .membership-conditions-section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .conditions-title {
+        font-size: 20px;
+    }
+    
+    .condition-item {
+        padding: 12px;
+    }
+    
+    .condition-number {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    
+    .condition-text {
+        font-size: 14px;
+    }
+}

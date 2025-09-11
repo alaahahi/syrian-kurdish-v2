@@ -38,6 +38,25 @@
                                {{ trans('text.about_desc_1') }}
                             </p>
 
+                            <!-- Network Information Section -->
+                            <div class="network-info-section mt-5">
+                                <div class="info-card">
+                                    <h4 class="info-title">{{ trans('text.network_definition') }}</h4>
+                                    <p class="info-text">{{ trans('text.network_definition_text') }}</p>
+                                </div>
+
+                                
+
+                                <div class="info-card">
+                                    <h4 class="info-title">{{ trans('text.network_vision_title') }}</h4>
+                                    <p class="info-text">{{ trans('text.network_vision_text') }}</p>
+                                </div>
+
+                                <div class="info-card">
+                                    <h4 class="info-title">{{ trans('text.network_message_title') }}</h4>
+                                    <p class="info-text">{{ trans('text.network_message_text') }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,86 +157,278 @@
             </div>
         </div>
         - Client Area End -->
-        <section class="service-area pt-100 pb-70">
-        <div class="container">
-            <div class="section-title text-center">
-                <span>{{ trans('text.principles_of_networking') }}</span>
-                 <p>
-                    {{ trans('text.network_goals_desc') }}
-                </p>
-            </div>
-            <div class="row pt-45">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <a href="#">
-                            <img src="assets/img/service-icon/1.png" alt="Images">
-                        </a>
-                        <a href="#">
-                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_1') }}</h3>
-                        </a>
-                        <p class="truncate-text">
-                            {{ trans('text.network_principles_and_goals_11') }}
-                        </p>
-                    </div>
+        <!-- Network Principles Area -->
+        <section class="network-principles-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span>{{ trans('text.network_principles_title') }}</span>
+                    <h2>{{ trans('text.network_principles_and_goals') }}</h2>
+                    <p>{{ trans('text.network_goals_desc') }}</p>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <a href="#">
-                            <img src="assets/img/service-icon/2.png" alt="Images">
-                        </a>
-                        <a href="#">
-                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_2') }}</h3>
-                        </a>
-                        <p class="truncate-text">
-                            {{ trans('text.network_principles_and_goals_21') }}
-                        </p>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class='bx bx-shield-check'></i>
+                        </div>
+                        <div class="principle-content">
+                            <h3>{{ trans('text.network_principles_and_goals_1') }}</h3>
+                            <p>{{ trans('text.network_principles_and_goals_11') }}</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <a href="#">
-                            <img src="assets/img/service-icon/3.png" alt="Images">
-                        </a>
-                        <a href="#">
-                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_3') }}</h3>
-                        </a>
-                        <p class="truncate-text">
-                            {{ trans('text.network_principles_and_goals_31') }}
-                        </p>
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class='bx bx-group'></i>
+                        </div>
+                        <div class="principle-content">
+                            <h3>{{ trans('text.network_principles_and_goals_2') }}</h3>
+                            <p>{{ trans('text.network_principles_and_goals_21') }}</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <a href="#">
-                            <img src="assets/img/service-icon/4.png" alt="Images">
-                        </a>
-                        <a href="#">
-                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_4') }}</h3>
-                        </a>
-                        <p class="truncate-text">
-                            {{ trans('text.network_principles_and_goals_41') }}
-                        </p>
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class='bx bx-world'></i>
+                        </div>
+                        <div class="principle-content">
+                            <h3>{{ trans('text.network_principles_and_goals_3') }}</h3>
+                            <p>{{ trans('text.network_principles_and_goals_31') }}</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service-card">
-                        <a href="#">
-                            <img src="assets/img/service-icon/5.png" alt="Images">
-                        </a>
-                        <a href="#">
-                            <h3 class="truncate-text">{{ trans('text.network_principles_and_goals_5') }}</h3>
-                        </a>
-                        <p class="truncate-text">
-                            {{ trans('text.network_principles_and_goals_51') }}
-                        </p>
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class='bx bx-award'></i>
+                        </div>
+                        <div class="principle-content">
+                            <h3>{{ trans('text.network_principles_and_goals_4') }}</h3>
+                            <p>{{ trans('text.network_principles_and_goals_41') }}</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                        <div class="principle-content">
+                            <h3>{{ trans('text.network_principles_and_goals_5') }}</h3>
+                            <p>{{ trans('text.network_principles_and_goals_51') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+<style>
+    
+/* Network Info Section Styles */
+.network-info-section {
+    margin-top: 40px;
+}
 
+.info-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+}
+
+.info-title {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+.info-text {
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0;
+}
+
+.principles-list {
+    margin-top: 15px;
+}
+
+.principle-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.principle-item:hover {
+    background: #e9ecef;
+}
+
+.principle-number {
+    background: #007bff;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.principle-text {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Network Principles Grid Styles */
+.network-principles-area {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.principle-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e9ecef;
+}
+
+.principle-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.principle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.principle-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.principle-icon i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.principle-card:hover .principle-icon {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.principle-content h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.principle-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .info-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .info-title {
+        font-size: 18px;
+    }
+    
+    .info-text {
+        font-size: 14px;
+    }
+    
+    .principle-item {
+        padding: 10px;
+    }
+    
+    .principle-number {
+        width: 22px;
+        height: 22px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    
+    .principle-text {
+        font-size: 14px;
+    }
+    
+    .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .principle-card {
+        padding: 25px;
+    }
+    
+    .principle-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    
+    .principle-icon i {
+        font-size: 28px;
+    }
+    
+    .principle-content h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .principle-content p {
+        font-size: 14px;
+    }
+}
+</style>
 @endsection
