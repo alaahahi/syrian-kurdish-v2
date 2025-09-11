@@ -354,8 +354,7 @@ Von wichtigen Ereignissen bis zu tiefgreifenden Recherchen",
         "membership_terms_desc81" => "Der Verein führt ein elektronisches und papierbasiertes Register für alle seine Mitglieder, in dem der vollständige Name des Mitglieds zusammen mit seinem Beitrittsdatum und der Mitgliedschaftskategorie, unter die es eingestuft wird, verzeichnet ist. Der Mitgliedschaftsausschuss verpflichtet sich, das genannte Register vorzubereiten und zu überprüfen und die darauf auftretenden Änderungen einzutragen.",
         "membership_terms_desc82" => "Unter Berücksichtigung von Absatz drei von Artikel 15 verpflichten sich die Mitglieder alle zwei Jahre und auf Anfrage des Mitgliedschaftsausschusses, Nachweise für die Fortsetzung ihrer Berufsausübung vorzulegen. Vollzeitmitglieder im Verein sind von dieser Verpflichtung während der gesamten Zeit ihrer Tätigkeit befreit.",
         "membership_tit" => "Mitgliedschaft im Syrischen Journalistenverband",
-        "" => "",
-        "" => "",
+    
         'press_freedoms' => 'Dokumentation von Presseverletzungen',
         'latest_documented_reports' => 'Neueste dokumentierte Berichte',
         'press_freedom_description' => 'Hier präsentieren wir die neuesten dokumentierten Verletzungen gegen Journalisten auf der ganzen Welt mit detaillierten Informationen zu jeder Fall.',
@@ -438,6 +437,9 @@ Von wichtigen Ereignissen bis zu tiefgreifenden Recherchen",
         "agreement_label"=>"Ich verpflichte mich, die Grundordnung des Netzwerks und den journalistischen Ehrenkodex einzuhalten.",
         "proficiency_level"=> "Kompetenzniveau",
         "certificates"=> "Zertifikate",
+
+        "press_freedoms_h"=> "Pressefreiheit",
+
     ];
     
 
