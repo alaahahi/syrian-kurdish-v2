@@ -436,7 +436,7 @@ Von wichtigen Ereignissen bis zu tiefgreifenden Recherchen",
         "facebook_link"=> "Facebook-Link",
         "agreement_label"=>"Ich verpflichte mich, die Grundordnung des Netzwerks und den journalistischen Ehrenkodex einzuhalten.",
         "proficiency_level"=> "Kompetenzniveau",
-        "certificates"=> "Zertifikate",
+        "choose_language" => "Sprache wählen",
 
         "press_freedoms_h"=> "Pressefreiheit",
 

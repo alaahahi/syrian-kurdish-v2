@@ -5029,3 +5029,61 @@ Animation CSS End
 .card-body {
     padding: 5rem 1rem !important;
 }
+
+/* Footer Language Section */
+.footer-languages {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.language-section h5 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.language-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.language-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.language-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    text-decoration: none;
+}
+
+.language-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .language-links {
+        gap: 10px;
+    }
+    
+    .language-link {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}

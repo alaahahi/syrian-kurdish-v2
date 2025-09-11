@@ -441,7 +441,7 @@ return [
         ""=>"",
         ""=>"",
         "proficiency_level"=> "مستوى الإتقان",
-        "certificates"=> "الشهادات",
+        "choose_language" => "اختر اللغة",
         "blogs"=>"المدونات",
         'share'=> 'مشاركة',
         'search_now' => 'ابحث الآن',

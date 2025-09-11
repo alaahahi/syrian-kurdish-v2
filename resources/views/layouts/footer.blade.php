@@ -28,30 +28,26 @@
 
                 <div class="col-lg-2 col-md-6">
                     <div class="footer-list">
-                        <ul>
+                         <ul>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="/">{{ trans('text.Home') }}</a>
+                                <a href="/">{{ trans('text.News') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('services') }}">{{ trans('text.Services') }}</a>
+                                <a href="{{ route('services') }}">{{ trans('text.press_freedoms_h') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('about') }}">{{ trans('text.About_Us') }}</a>
+                                <a href="{{ route('membership') }}">{{ trans('text.membership') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('membership.request') }}">{{ trans('text.membership_request') }}</a>
+                                <a href="{{ route('about') }}">{{ trans('text.about_network') }}</a>
                             </li>
                             <li>
                                 <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('news.details') }}">{{ trans('text.News') }}</a>
-                            </li>
-                            <li>
-                                <i class='bx bxs-chevron-right'></i>
-                                <a href="{{ route('contact') }}">{{ trans('text.Contact') }}</a>
+                                <a href="{{ route('contact') }}">{{ trans('text.contact') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -84,6 +80,8 @@
             </div>
         </div>
     </div>
+
+ 
 
     <div class="footer-bottom">
         <div class="container">
