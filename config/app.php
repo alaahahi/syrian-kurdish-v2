@@ -1,5 +1,8 @@
 <?php
-
+$lang_code = $_COOKIE['selectedlang']??'ar';
+if(!in_array($lang_code, ['en', 'ar','ku','de'])){
+    $lang_code = 'ar';
+}
 return [
 
     /*
@@ -80,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'ar',
+    'locale' => $lang_code,
 
     /*
     |--------------------------------------------------------------------------
