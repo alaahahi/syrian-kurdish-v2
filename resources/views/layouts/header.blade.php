@@ -158,6 +158,12 @@ dir="rtl"
                                             🇸🇦 العربية
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('lang.switch', 'de') }}"
+                                            class="dropdown-item {{ app()->getLocale() === 'de' ? 'active' : '' }}">
+                                            🇩🇪 الالمانية
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 

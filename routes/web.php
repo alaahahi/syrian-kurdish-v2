@@ -21,11 +21,15 @@ use App\Http\Controllers\MembershipRequestController;
 */
 
 Route::get('/lang/{locale}', function ($locale) {
-
+    // التحقق من أن اللغة مدعومة
+    if (!in_array($locale, ['en', 'ar', 'ku', 'de'])) {
+        $locale = 'ar';
+    }
+    
     session()->put('selectedlang', $locale);
     setcookie('selectedlang', $locale, time() + (60 * 24 * 30), '/');
     App::setLocale($locale);
-
+ 
     // Redirect back to the previous page
     return redirect()->back();
 })->name('lang.switch');
