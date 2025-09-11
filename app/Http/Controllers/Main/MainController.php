@@ -73,6 +73,9 @@ class MainController extends Controller
                   ->where('value', $slug)
                   ->where('locale', app()->getLocale());
         })->with('translations')->first();
+        if(!$post){
+            $post = Post::where('slug', $slug)->with('translations')->first();
+        }
 
         $posts = Post::with('translations')->get();
         return view('news_details', compact('posts','post'));
