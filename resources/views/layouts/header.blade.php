@@ -110,11 +110,11 @@ dir="rtl"
                                     {{ trans('text.press_freedoms_h') }}
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="{{ route('admin.structure') }}" class="nav-link">
                                     {{ trans('text.administrative_structure') }}
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a href="{{ route('membership') }}" class="nav-link">
                                     {{ trans('text.membership') }}
