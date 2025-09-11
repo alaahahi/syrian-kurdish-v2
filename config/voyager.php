@@ -133,17 +133,9 @@ return [
             'App\\Widgets\\UserDimmer',
             'App\\Widgets\\TagDimmer',
             'App\\Widgets\\CategoryDimmer',
-            'App\\Widgets\\BrandDimmer',
-            'App\\Widgets\\AcceptedBrandsDimmer',
-            'App\\Widgets\\UnacceptedBrandsDimmer',
+           
             'App\\Widgets\\PostDimmer',
-            'App\\Widgets\\AcceptedEventsDimmer',
-            'App\\Widgets\\UnacceptedEventsDimmer',
-            'App\\Widgets\\TodayEventsDimmer',
-            'App\\Widgets\\TomorrowEventsDimmer',
-            'App\\Widgets\\WeekendEventsDimmer',
-            'App\\Widgets\\FeaturedEventsDimmer',
-            'App\\Widgets\\SponsorsBrandsDimmer',
+           
             'App\\Widgets\\CitiesDimmer',
         
             
